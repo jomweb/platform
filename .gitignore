@@ -4,3 +4,6 @@
 
 # Composer
 /vendor/*
+
+# Vagrant
+/.vagrant/*
