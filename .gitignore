@@ -1,0 +1,6 @@
+# Laravel
+/public/packages/*
+.env
+
+# Composer
+/vendor/*
