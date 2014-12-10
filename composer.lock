@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2697e89d7e6468aafc7d19131f8d047e",
+    "hash": "f6b091b79e06330139f2177ee824c8e0",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1145,67 +1145,6 @@
             "time": "2014-12-09 06:22:08"
         },
         {
-            "name": "orchestra/facile",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/orchestral/facile.git",
-                "reference": "f1a591f934c617f641ed91aecd8c35ec7902273d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/facile/zipball/f1a591f934c617f641ed91aecd8c35ec7902273d",
-                "reference": "f1a591f934c617f641ed91aecd8c35ec7902273d",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "5.0.*",
-                "orchestra/support-facades": "3.0.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "illuminate/database": "5.0.*",
-                "illuminate/http": "5.0.*",
-                "illuminate/pagination": "5.0.*",
-                "mockery/mockery": "0.9.*",
-                "orchestra/support-core": "3.0.*"
-            },
-            "suggest": {
-                "laravel/framework": "Allow using orchestra/facile component outside of Orchestra Platform",
-                "orchestra/foundation": "Allow using orchestra/facile with Orchestra Platform"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Orchestra\\Facile\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mior Muhammad Zaki",
-                    "email": "crynobone@gmail.com",
-                    "homepage": "https://github.com/crynobone"
-                }
-            ],
-            "description": "Facile Component for Orchestra Platform",
-            "homepage": "http://orchestraplatform.com/docs/latest/components/facile/",
-            "keywords": [
-                "laravel",
-                "orchestra-platform",
-                "orchestral"
-            ],
-            "time": "2014-12-09 05:10:50"
-        },
-        {
             "name": "orchestra/foundation",
             "version": "dev-master",
             "source": {
@@ -1818,64 +1757,6 @@
                 "orchestral-platform"
             ],
             "time": "2014-12-10 02:20:11"
-        },
-        {
-            "name": "orchestra/story",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/orchestral/story.git",
-                "reference": "d30e911bcd4e2112a6adbf7e856813ee0e24d31c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/story/zipball/d30e911bcd4e2112a6adbf7e856813ee0e24d31c",
-                "reference": "d30e911bcd4e2112a6adbf7e856813ee0e24d31c",
-                "shasum": ""
-            },
-            "require": {
-                "erusev/parsedown-extra": "0.2.*",
-                "orchestra/facile": "3.0.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "orchestra/foundation": "3.0.*",
-                "orchestra/testbench": "3.0.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "resources/database/migrations"
-                ],
-                "psr-4": {
-                    "Orchestra\\Story\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mior Muhammad Zaki",
-                    "email": "crynobone@gmail.com",
-                    "homepage": "https://github.com/crynobone"
-                }
-            ],
-            "description": "CMS Extension for Orchestra Platform",
-            "keywords": [
-                "cms",
-                "laravel",
-                "orchestra-platform",
-                "orchestral"
-            ],
-            "time": "2014-12-09 07:48:45"
         },
         {
             "name": "orchestra/support",
