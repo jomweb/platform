@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => 'mysql',
+    'default' => 'primary',
 
     /*
     |--------------------------------------------------------------------------
@@ -46,13 +46,7 @@ return [
 
     'connections' => [
 
-        'sqlite' => [
-            'driver'   => 'sqlite',
-            'database' => storage_path().'/database.sqlite',
-            'prefix'   => '',
-        ],
-
-        'mysql' => [
+        'primary' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'database'  => 'forge',
@@ -61,26 +55,6 @@ return [
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
-        ],
-
-        'pgsql' => [
-            'driver'   => 'pgsql',
-            'host'     => 'localhost',
-            'database' => 'forge',
-            'username' => 'forge',
-            'password' => '',
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
-        ],
-
-        'sqlsrv' => [
-            'driver'   => 'sqlsrv',
-            'host'     => 'localhost',
-            'database' => 'database',
-            'username' => 'root',
-            'password' => '',
-            'prefix'   => '',
         ],
 
     ],
