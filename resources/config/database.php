@@ -48,10 +48,10 @@ return [
 
         'primary' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'database'  => 'forge',
-            'username'  => 'forge',
-            'password'  => '',
+            'host'      => getenv('DB_HOST') ?: '127.0.0.1',
+            'database'  => getenv('DB_DATABASE') ?: 'platform',
+            'username'  => getenv('DB_USERNAME') ?: 'root',
+            'password'  => getenv('DB_PASSWORD') ?: 'root',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

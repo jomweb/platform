@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-/usr/bin/mysql -uroot -p$1 -e "CREATE DATABASE IF NOT EXISTS jomweb DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;"
+/usr/bin/mysql -uroot -p$1 -e "CREATE DATABASE IF NOT EXISTS platform DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;"
 
 cd /vagrant/
 
