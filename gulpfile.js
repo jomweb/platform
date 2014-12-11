@@ -18,10 +18,6 @@ elixir(function(mix) {
       'public/js/vendor/jquery.js'
     )
     .publish(
-      'bootstrap-sass-official/assets/javascripts/bootstrap.js',
-      'public/js/vendor/bootstrap.js'
-    )
-    .publish(
       'font-awesome/css/font-awesome.min.css',
       'public/css/vendor/font-awesome.css'
     )
