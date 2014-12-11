@@ -18,6 +18,10 @@ elixir(function(mix) {
       'public/js/vendor/jquery.js'
     )
     .publish(
+      'jquery/dist/jquery.min.map',
+      'public/js/vendor/jquery.min.map'
+    )
+    .publish(
       'font-awesome/css/font-awesome.min.css',
       'public/css/vendor/font-awesome.css'
     )

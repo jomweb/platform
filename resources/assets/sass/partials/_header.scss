@@ -1,0 +1,28 @@
+a.logo {
+    display: block;
+    padding: 8px 0;
+    width: 91px;
+    float: left;
+    margin-left: 10px;
+
+    img { display: block; }
+}
+
+.fullwidthbanner-container {
+    width: 100% !important;
+    position: relative;
+    padding: 0;
+    max-height: 540px !important;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+/* ============================== */
+/* ! Higher res assets for Retina */
+/* ============================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    /* .logo {
+        background: url(logo2x.jpg) no-repeat;
+        background-size: 212px 303px;
+    } */
+}
