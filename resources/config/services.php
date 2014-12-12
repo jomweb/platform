@@ -14,6 +14,12 @@ return [
     |
     */
 
+    'facebook' => [
+        'client_id' => getenv('FACEBOOK_CLIENT_ID'),
+        'client_secret' => getenv('FACEBOOK_CLIENT_SECRET'),
+        'redirect' => url('social/facebook/connect'),
+    ],
+
     'mailgun' => [
         'domain' => '',
         'secret' => '',

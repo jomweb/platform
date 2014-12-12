@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => getenv('APP_URL') ?: 'http://localhost',
 
     /*
     |--------------------------------------------------------------------------
@@ -161,6 +161,8 @@ return [
         'App\Providers\EventServiceProvider',
         'App\Providers\ExtensionServiceProvider',
         'App\Providers\RouteServiceProvider',
+
+        'Laravel\Socialite\SocialiteServiceProvider',
     ],
 
     /*

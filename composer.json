@@ -22,7 +22,8 @@
 			"tests/TestCase.php"
 		],
 		"psr-4": {
-			"App\\": "app/"
+			"App\\": "app/",
+			"Orchestra\\OneAuth\\": "modules/oneauth/src/"
 		}
 	},
 	"scripts": {

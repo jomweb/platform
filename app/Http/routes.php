@@ -31,3 +31,7 @@ $router->controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
 ]);
+
+$router->get('social/{type}/connect', [
+    'uses'  => 'Auth\SocialController@connect'
+])->where('type', '(.+)');
