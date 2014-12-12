@@ -13,7 +13,7 @@
 		<!-- Navigation -->
 		<nav>
 			<ul class="navigation">
-				<li class="current"><a href="{!! handles('app::/') !!}">Home</a></li>
+				<li class="current"><a href="{!! handles('app::welcome') !!}">Home</a></li>
 				<li><a href="{!! handles('app::about') !!}">About</a></li>
 			</ul>
 		</nav>
