@@ -10,7 +10,6 @@ before_script:
   - travis_retry composer install --prefer-source --no-interaction --dev
 
 script:
-  - phpspec run
   - vendor/bin/phpunit -c phpunit.xml
 
 
