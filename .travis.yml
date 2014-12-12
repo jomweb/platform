@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - 5.5
+  - 5.6
+  - hhvm
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer install --prefer-source --no-interaction --dev
+
+script:
+  - phpspec run
+  - vendor/bin/phpunit -c phpunit.xml
+
+
+matrix:
+  allow_failures:
+    - php: hhvm
+  fash_finish: true
