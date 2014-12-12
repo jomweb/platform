@@ -11,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->addBackToWebsiteMenu();
     }
 
     /**
@@ -24,5 +24,16 @@ class AppServiceProvider extends ServiceProvider
         // This service provider is a great spot to register your various container
         // bindings with the application.
 
+    }
+
+    protected function addBackToWebsiteMenu()
+    {
+        if (! $this->app['orchestra.app']->installed()) {
+            return ;
+        }
+
+        $this->app['orchestra.platform.menu']->add('back-to-website', '^:home')
+            ->link(handles('app::/'))
+            ->title('Back to website');
     }
 }
