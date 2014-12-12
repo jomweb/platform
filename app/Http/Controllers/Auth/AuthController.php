@@ -1,7 +1,10 @@
 <?php namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Session\Store;
 use App\Http\Controllers\Controller;
+use Orchestra\Contracts\Html\Form\Grid;
+use Orchestra\Contracts\Html\Form\Fieldset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Orchestra\Foundation\Processor\AuthenticateUser;
 use Orchestra\Foundation\Processor\Account\ProfileCreator;
@@ -11,11 +14,21 @@ use Orchestra\Contracts\Foundation\Listener\Account\ProfileCreator as ProfileCre
 class AuthController extends Controller implements AuthenticateUserListener, ProfileCreatorListener
 {
     /**
-     * Create a new authentication controller instance.
+     * The session store implementation.
+     *
+     * @var \Illuminate\Session\Store
      */
-    public function __construct()
+    protected $session;
+
+    /**
+     * Create a new authentication controller instance.
+     *
+     * @param  \Illuminate\Session\Store  $session
+     */
+    public function __construct(Store $session)
     {
-        $this->middleware('orchestra.registrable', ['only' => ['getRegister', 'postRegister']]);
+        $this->session = $session;
+
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
@@ -83,7 +96,7 @@ class AuthController extends Controller implements AuthenticateUserListener, Pro
      */
     public function showProfileCreator(array $data)
     {
-        return view('auth.register', $data);
+        return view('auth.register', $this->extendProfileCreator($data));
     }
 
     /**
@@ -181,5 +194,27 @@ class AuthController extends Controller implements AuthenticateUserListener, Pro
     public function userHasLoggedOut()
     {
         return redirect(handles('app::/'));
+    }
+
+    /**
+     * Extends profile creator for frontend registration.
+     * 
+     * @param  array  $data
+     * @return array
+     */
+    protected function extendProfileCreator($data)
+    {
+        $social = $this->session->get('orchestra.oneauth');
+
+        if (! is_null($social)) {
+            $data['eloquent']->setAttribute('fullname', $social['user']->getName());
+            $data['eloquent']->setAttribute('email', $social['user']->getEmail());
+        }
+
+        $data['form']->extend(function (Grid $form) {
+            $form->attributes(['url' => handles('app::auth/register'), 'method' => 'POST']);
+        });
+
+        return $data;
     }
 }

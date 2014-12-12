@@ -19,6 +19,7 @@ class CreateProfilesTable extends Migration {
 
             $table->string('username');
             $table->text('description');
+            $table->string('avatar');
             $table->string('employment');
             $table->string('job_title');
             $table->string('location');
