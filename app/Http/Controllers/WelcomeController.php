@@ -34,17 +34,6 @@ class WelcomeController extends Controller
         return view(! $foundation->installed() ? 'hello' : 'welcome');
     }
 
-     /**
-     * Show the application welcome screen to the user.
-     *
-     * @param  \Orchestra\Contracts\Foundation\Foundation  $foundation
-     * @return mixed
-     */
-    public function welcome(Foundation $foundation)
-    {
-        return redirect(handles('app::/'));
-    }
-
     /**
      * Show the application about screen to the user.
      *
