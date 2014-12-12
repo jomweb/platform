@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use Orchestra\Contracts\Foundation\Foundation;
+
 class WelcomeController extends Controller
 {
     /*
@@ -24,11 +26,12 @@ class WelcomeController extends Controller
     /**
      * Show the application welcome screen to the user.
      *
-     * @return Response
+     * @param  \Orchestra\Contracts\Foundation\Foundation  $foundation
+     * @return mixed
      */
-    public function index()
+    public function index(Foundation $foundation)
     {
-        return view(app('orchestra.app')->installed() ? 'welcome' : 'hello');
+        return view($foundation->installed() ? 'welcome' : 'hello');
     }
 
     /**
