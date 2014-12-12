@@ -1971,12 +1971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/oneauth.git",
-                "reference": "84d14308f121d7ab5d38d8b4999c8fceadf0b302"
+                "reference": "a3cce7661dc0dd7067390fdb59539a04cdb43d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/oneauth/zipball/84d14308f121d7ab5d38d8b4999c8fceadf0b302",
-                "reference": "84d14308f121d7ab5d38d8b4999c8fceadf0b302",
+                "url": "https://api.github.com/repos/orchestral/oneauth/zipball/a3cce7661dc0dd7067390fdb59539a04cdb43d28",
+                "reference": "a3cce7661dc0dd7067390fdb59539a04cdb43d28",
                 "shasum": ""
             },
             "require": {
@@ -2008,7 +2008,7 @@
                 }
             ],
             "description": "[WIP] Social Authentication Extension for Orchestra Platform",
-            "time": "2014-12-12 12:32:09"
+            "time": "2014-12-12 12:40:20"
         },
         {
             "name": "orchestra/optimize",
