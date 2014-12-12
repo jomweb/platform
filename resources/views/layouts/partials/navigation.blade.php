@@ -12,7 +12,6 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{!! handles('app::welcome') !!}">Home</a></li>
-				<li><a href="{!! handles('app::about') !!}">About</a></li>
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>

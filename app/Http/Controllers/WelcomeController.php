@@ -26,11 +26,12 @@ class WelcomeController extends Controller
     /**
      * Show the application welcome screen to the user.
      *
+     * @param  \Orchestra\Contracts\Foundation\Foundation  $foundation
      * @return mixed
      */
-    public function index()
+    public function index(Foundation $foundation)
     {
-        return view('hello');
+        return view(! $foundation->installed() ? 'hello' : 'welcome');
     }
 
      /**
@@ -41,11 +42,7 @@ class WelcomeController extends Controller
      */
     public function welcome(Foundation $foundation)
     {
-        if (! $foundation->installed()) {
-            return $this->index();
-        }
-
-        return view('welcome');
+        return redirect(handles('app::/'));
     }
 
     /**

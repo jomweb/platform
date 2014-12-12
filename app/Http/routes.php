@@ -12,7 +12,6 @@
 */
 
 $router->get('/', 'WelcomeController@index');
-$router->get('welcome', 'WelcomeController@welcome');
 $router->get('about', 'WelcomeController@about');
 
 $router->get('home', 'HomeController@index');
