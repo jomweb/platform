@@ -198,7 +198,7 @@ class AuthController extends Controller implements AuthenticateUserListener, Pro
 
     /**
      * Extends profile creator for frontend registration.
-     * 
+     *
      * @param  array  $data
      * @return array
      */

@@ -7,7 +7,7 @@
 		<h2>Password Reset</h2>
 
 		<p>
-			To reset your password, complete this form: {{ url(handles("orchestra/foundation::forgot/reset/{$token}")) }}.<br/>
+			To reset your password, complete this form: {{ url(handles("app::password/reset/{$token}")) }}.<br/>
 			This link will expire in {{ config('auth.reminder.expire', 60) }} minutes.
 		</p>
 	</body>
