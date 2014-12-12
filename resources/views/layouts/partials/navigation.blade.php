@@ -1,21 +1,19 @@
-<header class="menu">
-
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
-
-		<!-- Mobile Only Menu Button  -->
-		<a href="#menu" class="menu-trigger"><i class="icon-reorder"></i></a>
-
-		<!-- Logo  -->
-		<a class="logo" href="{{ handles('app::/') }}">
-			<img src="{!! asset('images/logo.png') !!}" alt="" title="">
-		</a>
-
-		<!-- Navigation -->
-		<nav>
-			<ul class="navigation">
-				<li class="current"><a href="{!! handles('app::welcome') !!}">Home</a></li>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{!! handles('app::/') !!}">{!! memorize('site.name') !!}</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{!! handles('app::welcome') !!}">Home</a></li>
 				<li><a href="{!! handles('app::about') !!}">About</a></li>
 			</ul>
-		</nav>
-	</div><!-- End of container -->
-</header>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>

@@ -13,20 +13,11 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
   mix.sass('app.scss')
-    .publish(
-      'jquery/dist/jquery.min.js',
-      'public/js/vendor/jquery.js'
-    )
-    .publish(
-      'jquery/dist/jquery.min.map',
-      'public/js/vendor/jquery.min.map'
-    )
-    .publish(
-      'font-awesome/css/font-awesome.min.css',
-      'public/css/vendor/font-awesome.css'
-    )
-    .publish(
-      'font-awesome/fonts',
-      'public/css/fonts'
-    );
+    .copy('resources/html/assets/css/ionicons.css', 'public/css/vendor/ionicons.css')
+    .copy('resources/html/assets/js/ie10-viewport-bug-workaround.js', 'public/js/ie.js')
+    .publish('jquery/dist/jquery.min.js', 'public/js/vendor/jquery.js')
+    .publish('jquery/dist/jquery.min.map', 'public/js/vendor/jquery.min.map')
+    .publish('bootstrap-sass-official/assets/javascripts/bootstrap.js', 'public/js/vendor/bootstrap.js')
+    .publish('font-awesome/css/font-awesome.min.css', 'public/css/vendor/font-awesome.css')
+    .publish('font-awesome/fonts', 'public/css/fonts');
 });

@@ -4856,7 +4856,7 @@ button.close {
  * Version: 1.0
  */
 /*  ################################################################
-    1. GENERAL STRUCTURES
+	1. GENERAL STRUCTURES
 ################################################################# */
 /* Import fonts */
 * {
@@ -5178,12 +5178,11 @@ h2.bold {
   font-weight: 900; }
 
 /* FOOTER */
-#f {
+footer, #f {
   padding-bottom: 80px;
   padding-top: 80px;
   background: #2f2f2f;
   color: white; }
-
-#f i {
-  font-size: 25px;
-  margin-right: 18px; }
+  footer i, #f i {
+    font-size: 25px;
+    margin-right: 18px; }
