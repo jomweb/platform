@@ -5,6 +5,7 @@ a.logo {
     float: left;
     margin-left: 10px;
 
+    &:hover { background: inherit; }
     img { display: block; }
 }
 

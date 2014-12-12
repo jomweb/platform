@@ -240,6 +240,15 @@ button, a {
         -o-box-shadow: 0 2px 0 0 #121D27;
         -ms-box-shadow: 0 2px 0 0 #121D27;
 
+        &:hover {
+            background: #121D27;
+            color: #fff;
+
+            i { color: #fff; }
+        }
+
+        i { color: #fff; }
+
         &.grey {
             background: #868686;
             color: #fff;
@@ -368,15 +377,6 @@ button, a {
                 i { color:#fff; }
             }
         }
-    }
-
-    i { color: #fff; }
-
-    &:hover {
-        background: #121D27;
-        color: #fff;
-
-        i { color: #fff; }
     }
 }
 

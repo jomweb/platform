@@ -12,6 +12,7 @@
 */
 
 $router->get('/', 'WelcomeController@index');
+$router->get('about', 'WelcomeController@about');
 
 $router->get('home', 'HomeController@index');
 

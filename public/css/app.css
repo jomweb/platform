@@ -223,6 +223,13 @@ button.btn, a.btn {
   -webkit-box-shadow: 0 2px 0 0 #121D27;
   -o-box-shadow: 0 2px 0 0 #121D27;
   -ms-box-shadow: 0 2px 0 0 #121D27; }
+  button.btn:hover, a.btn:hover {
+    background: #121D27;
+    color: #fff; }
+    button.btn:hover i, a.btn:hover i {
+      color: #fff; }
+  button.btn i, a.btn i {
+    color: #fff; }
   button.btn.grey, a.btn.grey {
     background: #868686;
     color: #fff;
@@ -316,13 +323,6 @@ button.btn, a.btn {
       color: #fff; }
       button.btn.orange:hover i, a.btn.orange:hover i {
         color: #fff; }
-button i, a i {
-  color: #fff; }
-button:hover, a:hover {
-  background: #121D27;
-  color: #fff; }
-  button:hover i, a:hover i {
-    color: #fff; }
 
 /* #Forms
 ================================================== */
@@ -718,6 +718,8 @@ a.logo {
   width: 91px;
   float: left;
   margin-left: 10px; }
+  a.logo:hover {
+    background: inherit; }
   a.logo img {
     display: block; }
 

@@ -30,4 +30,14 @@ class WelcomeController extends Controller
     {
         return view(app('orchestra.app')->installed() ? 'welcome' : 'hello');
     }
+
+    /**
+     * Show the application about screen to the user.
+     *
+     * @return mixed
+     */
+    public function about()
+    {
+        return view('about');
+    }
 }
