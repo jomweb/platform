@@ -1,6 +1,6 @@
 {
-	"name": "jomweb/jomweb",
-	"description": "JomWeb.my",
+	"name": "jomweb/platform",
+	"description": "JomWeb Platform",
 	"homepage": "http://jomweb.my/",
 	"license": "MIT",
 	"type": "project",
