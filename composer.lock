@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e5f0669d5a904393ad337f8ae4f8ae8c",
+    "hash": "1ac1a744f4e1c6de4ed7c9a5b9b11ff6",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -642,12 +642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c096f8512ad25cc8a09bc64b50f306f330bb889f"
+                "reference": "edd48d8d92692335ad0488c3402cd2d7eb7fcf10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c096f8512ad25cc8a09bc64b50f306f330bb889f",
-                "reference": "c096f8512ad25cc8a09bc64b50f306f330bb889f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/edd48d8d92692335ad0488c3402cd2d7eb7fcf10",
+                "reference": "edd48d8d92692335ad0488c3402cd2d7eb7fcf10",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-08 16:03:11"
+            "time": "2014-12-11 17:15:21"
         },
         {
             "name": "laravel/socialite",
@@ -1966,6 +1966,51 @@
             "time": "2014-12-09 08:04:07"
         },
         {
+            "name": "orchestra/oneauth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/oneauth.git",
+                "reference": "84d14308f121d7ab5d38d8b4999c8fceadf0b302"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/oneauth/zipball/84d14308f121d7ab5d38d8b4999c8fceadf0b302",
+                "reference": "84d14308f121d7ab5d38d8b4999c8fceadf0b302",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/socialite": "dev-master",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\OneAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com"
+                }
+            ],
+            "description": "[WIP] Social Authentication Extension for Orchestra Platform",
+            "time": "2014-12-12 12:32:09"
+        },
+        {
             "name": "orchestra/optimize",
             "version": "dev-master",
             "source": {
@@ -3163,16 +3208,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v1.0.9",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "56c252d48dce336da97926591aed71805203815b"
+                "reference": "732d2adb7d916c9593b9d58c3b0d9ebefead07aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/56c252d48dce336da97926591aed71805203815b",
-                "reference": "56c252d48dce336da97926591aed71805203815b",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/732d2adb7d916c9593b9d58c3b0d9ebefead07aa",
+                "reference": "732d2adb7d916c9593b9d58c3b0d9ebefead07aa",
                 "shasum": ""
             },
             "require": {
@@ -3210,7 +3255,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2014-10-16 14:50:21"
+            "time": "2014-12-05 15:19:21"
         }
     ],
     "packages-dev": [
@@ -4284,9 +4329,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "laravel/socialite": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "platform": [],
     "platform-dev": []
