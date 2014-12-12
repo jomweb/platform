@@ -11,6 +11,8 @@ class OneAuthServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // TODO: Implement register() method.
+        $this->app['events']->listen('auth.login', 'Orchestra\OneAuth\Handlers\UserLoggedIn');
+        $this->app['events']->listen('orchestra.oneauth.user: saved', 'Orchestra\OneAuth\Handlers\UserConnected');
+        $this->app['events']->listen('auth.logout', 'Orchestra\OneAuth\Handlers\UserLoggedOut');
     }
 }

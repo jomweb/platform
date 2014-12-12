@@ -1,8 +1,10 @@
 <?php namespace Orchestra\OneAuth\Processor;
 
+use Orchestra\OneAuth\Token;
 use Illuminate\Session\Store;
 use Illuminate\Contracts\Auth\Guard;
 use Laravel\Socialite\Contracts\User;
+use Orchestra\OneAuth\User as Eloquent;
 use Laravel\Socialite\Contracts\Provider;
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\Factory as Socialite;
@@ -76,7 +78,9 @@ class AuthenticateUser implements Command
             'user' => $this->getUserInformation($provider, $type),
         ];
 
-        return $listener->userHasConnected($data);
+        $this->session->put('orchestra.oneauth', $data);
+
+        return $listener->userHasConnected($this->auth, $data);
     }
 
     /**
@@ -115,10 +119,28 @@ class AuthenticateUser implements Command
      */
     protected function attemptToConnectUser(User $user, $type)
     {
-        if (! is_null($currentUser = $this->auth->user())) {
+        $model = $this->getClientOrCreate($user, $type);
 
+        if (! is_null($currentUser = $this->auth->user())) {
+            $model->setAttribute('user_id', $currentUser->getAuthIdentifier());
         }
 
-        dd($user, $type);
+        $model->setAttribute('token', new Token(['access' => $user->token]));
+        $model->save();
+
+        $this->dispatcher->fire('orchestra.oneauth.user: saved', [$model, $user, $type]);
+    }
+
+    /**
+     * @param  \Laravel\Socialite\Contracts\User  $user
+     * @param  string  $type
+     * @return \Orchestra\OneAuth\User
+     */
+    protected function getClientOrCreate(User $user, $type)
+    {
+        return Eloquent::firstOrNew([
+            'provider' => $type,
+            'uid' => $user->getId(),
+        ]);
     }
 }

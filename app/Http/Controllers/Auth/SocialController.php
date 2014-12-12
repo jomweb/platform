@@ -20,5 +20,6 @@ class SocialController extends Controller implements ConnectUser
      */
     public function userHasConnected(array $data)
     {
+        return redirect(handles('app::/'));
     }
 }

@@ -17,9 +17,9 @@ class OrchestraOneauthCreateUsersTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned()->nullable();
 
-            $this->string('provider');
-            $this->string('uid');
-            $this->text('token')->nullable();
+            $table->string('provider');
+            $table->string('uid');
+            $table->text('token')->nullable();
 
             $table->timestamps();
 

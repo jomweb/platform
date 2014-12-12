@@ -1,6 +1,8 @@
 <?php namespace Orchestra\OneAuth;
 
+use Illuminate\Support\Facades\Session;
 use Orchestra\Model\Eloquent;
+use Illuminate\Contracts\Auth\Authenticatable;
 
 class User extends Eloquent
 {
@@ -10,6 +12,13 @@ class User extends Eloquent
      * @var string
      */
     protected $table = 'user_oneauth';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['provider', 'uid'];
 
     /**
      * Get token attribute using accessor.
