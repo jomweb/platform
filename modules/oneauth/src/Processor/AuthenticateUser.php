@@ -73,14 +73,11 @@ class AuthenticateUser implements Command
             return $this->getAuthorizationFirst($provider);
         }
 
-        $data = [
-            'provider' => $type,
-            'user' => $this->getUserInformation($provider, $type),
-        ];
+        $data = $this->getUserData($provider, $type);
 
         $this->session->put('orchestra.oneauth', $data);
 
-        return $listener->userHasConnected($this->auth, $data);
+        return $listener->userHasConnected($data, $this->auth);
     }
 
     /**
@@ -99,15 +96,19 @@ class AuthenticateUser implements Command
      *
      * @param  \Laravel\Socialite\Contracts\Provider  $provider
      * @param  string  $type
-     * @return \Laravel\Socialite\Contracts\User
+     * @return array
      */
-    protected function getUserInformation(Provider $provider, $type)
+    protected function getUserData(Provider $provider, $type)
     {
         $user = $provider->user();
 
-        $this->attemptToConnectUser($user, $type);
+        $model = $this->attemptToConnectUser($user, $type);
 
-        return $user;
+        $data = ['provider' => $type, 'user' => $user];
+
+        $this->dispatcher->fire('orchestra.oneauth.user: saved', [$model, $data, $this->auth]);
+
+        return $data;
     }
 
     /**
@@ -115,7 +116,7 @@ class AuthenticateUser implements Command
      *
      * @param  \Laravel\Socialite\Contracts\User  $user
      * @param  string  $type
-     * @return void
+     * @return \Orchestra\OneAuth\User
      */
     protected function attemptToConnectUser(User $user, $type)
     {
@@ -128,7 +129,7 @@ class AuthenticateUser implements Command
         $model->setAttribute('token', new Token(['access' => $user->token]));
         $model->save();
 
-        $this->dispatcher->fire('orchestra.oneauth.user: saved', [$model, $user, $type]);
+        return $model;
     }
 
     /**

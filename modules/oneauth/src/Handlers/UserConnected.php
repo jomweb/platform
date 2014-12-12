@@ -1,25 +1,32 @@
 <?php namespace Orchestra\OneAuth\Handlers;
 
-use Orchestra\OneAuth\User;
 use Illuminate\Contracts\Auth\Guard;
+use Orchestra\OneAuth\User as Eloquent;
 
 class UserConnected
 {
-    protected $auth;
-
-    public function __construct(Guard $auth)
-    {
-        $this->auth = $auth;
-    }
-
-    public function handle(User $model)
+    /**
+     * Handle user connected via social auth.
+     *
+     * @param  \Orchestra\OneAuth\User  $model
+     * @param  array  $data
+     * @param  \Illuminate\Contracts\Auth\Guard  $auth
+     * @return void
+     */
+    public function handle(Eloquent $model, array $data, Guard $auth)
     {
         if (! is_null($id = $this->getAuthenticatedUser($model))) {
-            $this->auth->loginUsingId($id, true);
+            $auth->loginUsingId($id, true);
         }
     }
 
-    protected function getAuthenticatedUser(User $model)
+    /**
+     * Get user unique identifier or return null.
+     *
+     * @param  \Orchestra\OneAuth\User $model
+     * @return mixed|null
+     */
+    protected function getAuthenticatedUser(Eloquent $model)
     {
         if ($this->auth->check()) {
             return null;

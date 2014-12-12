@@ -12,6 +12,12 @@ class UserLoggedIn
         $this->session = $session;
     }
 
+    /**
+     * Handle user logged in.
+     *
+     * @param  \Illuminate\Contracts\Auth\Authenticatable  $authenticatable
+     * @return bool|null
+     */
     public function handle(Authenticatable $authenticatable)
     {
         if (! $this->session->has('orchestra.oneauth')) {
