@@ -10,7 +10,6 @@ class ExtensionServiceProvider extends ServiceProvider
      * @var array
      */
     protected $extensions = [
-        'app::Extensions/*/*',
-        'orchestra/oneauth' => 'base::modules/oneauth',
+        'app::Extensions/*/*'
     ];
 }
