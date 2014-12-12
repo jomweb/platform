@@ -1,17 +1,57 @@
 <?php namespace Orchestra\OneAuth\Processor;
 
-use Laravel\Socialite\Contracts\Provider;
+use Illuminate\Session\Store;
+use Illuminate\Contracts\Auth\Guard;
 use Laravel\Socialite\Contracts\User;
-use Orchestra\OneAuth\Contracts\Listener\ConnectUser;
+use Laravel\Socialite\Contracts\Provider;
+use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\Factory as Socialite;
+use Orchestra\OneAuth\Contracts\Listener\ConnectUser;
 use Orchestra\OneAuth\Contracts\Command\AuthenticateUser as Command;
 
 class AuthenticateUser implements Command
 {
+    /**
+     * The authenticator implementation.
+     *
+     * @var \Illuminate\Contracts\Auth\Guard
+     */
+    protected $auth;
+
+    /**
+     * The events dispatcher implementation.
+     *
+     * @var \Illuminate\Contracts\Events\Dispatcher
+     */
+    protected $dispatcher;
+
+    /**
+     * The session store implementation.
+     *
+     * @var \Illuminate\Session\Store
+     */
+    protected $session;
+
+    /**
+     * The socialite implementation.
+     *
+     * @var \Laravel\Socialite\Contracts\Factory
+     */
     protected $socialite;
 
-    public function __construct(Socialite $socialite)
+    /**
+     * Construct a new authenticate user processor.
+     *
+     * @param \Illuminate\Contracts\Auth\Guard  $auth
+     * @param \Illuminate\Contracts\Events\Dispatcher  $dispatcher
+     * @param \Illuminate\Session\Store  $session
+     * @param \Laravel\Socialite\Contracts\Factory  $socialite
+     */
+    public function __construct(Guard $auth, Dispatcher $dispatcher, Store $session, Socialite $socialite)
     {
+        $this->auth = $auth;
+        $this->dispatcher = $dispatcher;
+        $this->session = $session;
         $this->socialite = $socialite;
     }
 
@@ -61,13 +101,24 @@ class AuthenticateUser implements Command
     {
         $user = $provider->user();
 
-        $this->attemptToConnectUser($user);
+        $this->attemptToConnectUser($user, $type);
 
         return $user;
     }
 
-    protected function attemptToConnectUser(User $user)
+    /**
+     * Attempt to connect with user authentication.
+     *
+     * @param  \Laravel\Socialite\Contracts\User  $user
+     * @param  string  $type
+     * @return void
+     */
+    protected function attemptToConnectUser(User $user, $type)
     {
-        dd($user);
+        if (! is_null($currentUser = $this->auth->user())) {
+
+        }
+
+        dd($user, $type);
     }
 }

@@ -2,17 +2,23 @@
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Laravel\Socialite\Contracts\Factory as Socialite;
+use Orchestra\OneAuth\Contracts\Listener\ConnectUser;
+use Orchestra\OneAuth\Processor\AuthenticateUser as Processor;
 
-class SocialController extends Controller
+class SocialController extends Controller implements ConnectUser
 {
-    public function connect(Socialite $socialite, Request $request, $type = 'facebook')
+    public function connect(Processor $processor, Request $request, $type = 'facebook')
     {
-        if ($request->has('code')) {
-            $user = $socialite->with('facebook')->user();
-            dd($user);
-        }
+        return $processor->execute($this, $type, $request->has('code'));
+    }
 
-        return $socialite->with($type)->redirect();
+    /**
+     * Response when user has connected.
+     *
+     * @param  array $data
+     * @return mixed
+     */
+    public function userHasConnected(array $data)
+    {
     }
 }

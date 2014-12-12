@@ -161,8 +161,6 @@ return [
         'App\Providers\EventServiceProvider',
         'App\Providers\ExtensionServiceProvider',
         'App\Providers\RouteServiceProvider',
-
-        'Laravel\Socialite\SocialiteServiceProvider',
     ],
 
     /*
