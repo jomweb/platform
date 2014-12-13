@@ -11,3 +11,6 @@
 		</div>
 	</div>
 </footer>
+
+<script src="{{ asset('js/vendor/jquery.js') }}"></script>
+<script src="{{ asset('js/vendor/bootstrap.js') }}"></script>
