@@ -20,6 +20,12 @@ return [
         'redirect' => url('social/facebook/connect'),
     ],
 
+    'github' => [
+        'client_id' => getenv('GITHUB_CLIENT_ID'),
+        'client_secret' => getenv('GITHUB_CLIENT_SECRET'),
+        'redirect' => url('social/github/connect'),
+    ],
+
     'mailgun' => [
         'domain' => '',
         'secret' => '',
