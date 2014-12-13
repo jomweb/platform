@@ -12,6 +12,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->addBackToWebsiteMenu();
+
+        $this->addViewComposers();
     }
 
     /**
@@ -28,12 +30,26 @@ class AppServiceProvider extends ServiceProvider
 
     protected function addBackToWebsiteMenu()
     {
-        if (! $this->app['orchestra.app']->installed()) {
-            return ;
-        }
+        $app = $this->app;
 
-        $this->app['orchestra.platform.menu']->add('back-to-website', '^:home')
-            ->link(handles('app::/'))
-            ->title('Back to website');
+        $this->app['events']->listen('orchestra.ready: admin', function () use ($app) {
+            if (! $app['orchestra.app']->installed()) {
+                return ;
+            }
+
+            $app['orchestra.platform.menu']->add('back-to-website', '^:home')
+                ->link(handles('app::/'))
+                ->title('Back to website');
+        });
+    }
+
+    /**
+     * Add view composers.
+     *
+     * @return void
+     */
+    protected function addViewComposers()
+    {
+        $this->app['view']->composer('layouts.partials.navigation', 'App\Composers\Navbar');
     }
 }

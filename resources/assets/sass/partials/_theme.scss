@@ -151,6 +151,12 @@ a:focus {
 	border-bottom: 2px solid #e7e7e7;
 }
 
+.dropdown-menu > li {
+	> a {
+		font-size: 0.7em;
+	}
+}
+
 /* FORM CONFIGURATION */
 
 input {
