@@ -32,6 +32,6 @@ $router->controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
-$router->get('social/{type}/connect', [
-    'uses'  => 'Auth\SocialController@connect'
-])->where('type', '(.+)');
+$router->get('social/{provider}/connect', [
+    'uses' => 'Auth\SocialController@connect',
+])->where('provider', '(facebook|github)');
