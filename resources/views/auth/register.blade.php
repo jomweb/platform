@@ -7,7 +7,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">Register</div>
 			<div class="panel-body">
-                {!! $form !!}
+				{!! $form !!}
 			</div>
 		</div>
 	</div>

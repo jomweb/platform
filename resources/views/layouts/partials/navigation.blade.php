@@ -15,13 +15,14 @@
 				@if (! is_null($user))
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					@if (! is_null($user->profile))
-					{!! $user->profile->username !!}
-					@else
-					{!! $user->fullname !!}
-					@endif
+						{!! data_get($user, 'profile.username', data_get($user, 'fullname')) !!}
 					</a>
 					<ul class="dropdown-menu">
+						<li role="presentation" class="dropdown-header">Profile</li>
+						@if (is_null($user->profile))
+						<li><a href="{!! handles('app::profile/create') !!}">Create Your Profile</a></li>
+						@endif
+						<li role="presentation" class="dropdown-header">Account</li>
 						<li><a href="{!! handles('app::auth/logout') !!}">Logout</a></li>
 					</ul>
 				</li>

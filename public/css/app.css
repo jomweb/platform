@@ -5139,6 +5139,10 @@ a:hover, a:focus {
 .dropdown-menu > li > a {
   font-size: 0.7em; }
 
+.dropdown-header {
+  font-size: 0.75em;
+  padding: 7px 10px 3px; }
+
 /* FORM CONFIGURATION */
 input {
   font-size: 16px;
