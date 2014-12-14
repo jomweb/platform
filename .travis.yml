@@ -10,8 +10,8 @@ before_script:
   - travis_retry composer install --prefer-source --no-interaction --dev
 
 script:
+  - vendor/bin/phpspec run
   - vendor/bin/phpunit -c phpunit.xml
-
 
 matrix:
   allow_failures:
