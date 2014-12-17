@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1ac1a744f4e1c6de4ed7c9a5b9b11ff6",
+    "hash": "6b567afd969b4963273728e4108de083",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -642,12 +642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d85eb15912c464573b77db67e6327ade03b399fe"
+                "reference": "089687612679f373a9d60f1a1f762e8648daacd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d85eb15912c464573b77db67e6327ade03b399fe",
-                "reference": "d85eb15912c464573b77db67e6327ade03b399fe",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/089687612679f373a9d60f1a1f762e8648daacd7",
+                "reference": "089687612679f373a9d60f1a1f762e8648daacd7",
                 "shasum": ""
             },
             "require": {
@@ -659,7 +659,7 @@
                 "ircmaxell/password-compat": "~1.0",
                 "jeremeamia/superclosure": "~1.0.1",
                 "league/flysystem": "~1.0",
-                "monolog/monolog": "~1.6",
+                "monolog/monolog": "~1.11",
                 "mtdowling/cron-expression": "~1.0",
                 "nesbot/carbon": "~1.0",
                 "patchwork/utf8": "~1.1",
@@ -749,7 +749,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-14 01:18:20"
+            "time": "2014-12-16 23:46:08"
         },
         {
             "name": "laravel/socialite",
@@ -811,12 +811,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "c92e3c836be5dcfbe57a6219e9585d944e0b5ae2"
+                "reference": "1b6c3f41b29671ca2dff32c179156ea2d26cc249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c92e3c836be5dcfbe57a6219e9585d944e0b5ae2",
-                "reference": "c92e3c836be5dcfbe57a6219e9585d944e0b5ae2",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1b6c3f41b29671ca2dff32c179156ea2d26cc249",
+                "reference": "1b6c3f41b29671ca2dff32c179156ea2d26cc249",
                 "shasum": ""
             },
             "require": {
@@ -831,7 +831,7 @@
                 "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
                 "phpseclib/phpseclib": "~0.3.5",
-                "phpspec/phpspec": "~2.0",
+                "phpspec/phpspec": "~2.0.0",
                 "phpunit/phpunit": "~4.0",
                 "predis/predis": "~1.0",
                 "rackspace/php-opencloud": "~1.11",
@@ -891,7 +891,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2014-12-09 15:48:33"
+            "time": "2014-12-16 18:08:21"
         },
         {
             "name": "league/oauth1-client",
@@ -1351,12 +1351,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/control.git",
-                "reference": "174307e9cae7df1d4786e3be1c1278d06e848da1"
+                "reference": "f36f5183c9216484bdc93ac13bcfbeeb838e79d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/control/zipball/174307e9cae7df1d4786e3be1c1278d06e848da1",
-                "reference": "174307e9cae7df1d4786e3be1c1278d06e848da1",
+                "url": "https://api.github.com/repos/orchestral/control/zipball/f36f5183c9216484bdc93ac13bcfbeeb838e79d3",
+                "reference": "f36f5183c9216484bdc93ac13bcfbeeb838e79d3",
                 "shasum": ""
             },
             "require": {
@@ -1402,7 +1402,7 @@
                 "theme",
                 "timezone"
             ],
-            "time": "2014-12-14 13:08:04"
+            "time": "2014-12-15 09:15:55"
         },
         {
             "name": "orchestra/extension",
@@ -1473,12 +1473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/foundation.git",
-                "reference": "90bc1965be55ec803d4020891125b37ec289d702"
+                "reference": "3aa830265ee4fceca0988d736eaaef735250df4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/foundation/zipball/90bc1965be55ec803d4020891125b37ec289d702",
-                "reference": "90bc1965be55ec803d4020891125b37ec289d702",
+                "url": "https://api.github.com/repos/orchestral/foundation/zipball/3aa830265ee4fceca0988d736eaaef735250df4e",
+                "reference": "3aa830265ee4fceca0988d736eaaef735250df4e",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1542,7 @@
                 "orchestral",
                 "user-management"
             ],
-            "time": "2014-12-14 13:32:14"
+            "time": "2014-12-17 02:43:36"
         },
         {
             "name": "orchestra/html",

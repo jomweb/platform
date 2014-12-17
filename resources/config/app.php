@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => (bool) getenv('APP_DEBUG') ?: false,
+    'debug' => env('APP_DEBUG') ?: false,
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => getenv('APP_URL') ?: 'http://localhost',
+    'url' => env('APP_URL') ?: 'http://localhost',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => getenv('APP_KEY') ?: '6pfn2fbqeuK2ygp1M7ARySESvGZwsNb1',
+    'key' => env('APP_KEY') ?: '6pfn2fbqeuK2ygp1M7ARySESvGZwsNb1',
 
     'cipher' => MCRYPT_RIJNDAEL_128,
 
