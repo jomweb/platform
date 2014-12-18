@@ -642,12 +642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "089687612679f373a9d60f1a1f762e8648daacd7"
+                "reference": "5faea19600f94716d0379ece02531449e8db8c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/089687612679f373a9d60f1a1f762e8648daacd7",
-                "reference": "089687612679f373a9d60f1a1f762e8648daacd7",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5faea19600f94716d0379ece02531449e8db8c96",
+                "reference": "5faea19600f94716d0379ece02531449e8db8c96",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-16 23:46:08"
+            "time": "2014-12-18 05:03:00"
         },
         {
             "name": "laravel/socialite",
@@ -1473,12 +1473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/foundation.git",
-                "reference": "3aa830265ee4fceca0988d736eaaef735250df4e"
+                "reference": "7dbbf1f430b0eef7be0a880f543698e7e8cb68bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/foundation/zipball/3aa830265ee4fceca0988d736eaaef735250df4e",
-                "reference": "3aa830265ee4fceca0988d736eaaef735250df4e",
+                "url": "https://api.github.com/repos/orchestral/foundation/zipball/7dbbf1f430b0eef7be0a880f543698e7e8cb68bb",
+                "reference": "7dbbf1f430b0eef7be0a880f543698e7e8cb68bb",
                 "shasum": ""
             },
             "require": {
@@ -1504,7 +1504,7 @@
             "require-dev": {
                 "mockery/mockery": "0.9.*",
                 "orchestra/resources": "3.0.*",
-                "orchestra/testbench": "3.0.*",
+                "orchestra/testing": "3.0.*",
                 "twbs/bootstrap": "~3@stable"
             },
             "type": "library",
@@ -1542,7 +1542,7 @@
                 "orchestral",
                 "user-management"
             ],
-            "time": "2014-12-17 02:43:36"
+            "time": "2014-12-17 07:14:06"
         },
         {
             "name": "orchestra/html",
@@ -3319,12 +3319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "d04c5be7db837c03fe64d2936a54f56b9d3f10f7"
+                "reference": "d66af61cdf2c23afa22390496ca063d5f2202052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/d04c5be7db837c03fe64d2936a54f56b9d3f10f7",
-                "reference": "d04c5be7db837c03fe64d2936a54f56b9d3f10f7",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/d66af61cdf2c23afa22390496ca063d5f2202052",
+                "reference": "d66af61cdf2c23afa22390496ca063d5f2202052",
                 "shasum": ""
             },
             "require": {
@@ -3372,7 +3372,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2014-12-09 05:51:50"
+            "time": "2014-12-17 03:03:47"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -4334,6 +4334,7 @@
     "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
