@@ -1,5 +1,7 @@
 <?php namespace App\Providers;
 
+use App\Composers\Navbar;
+use App\Handlers\BackToWebsite;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -28,19 +30,14 @@ class AppServiceProvider extends ServiceProvider
 
     }
 
+    /**
+     * Add back to website menu.
+     *
+     * @return void
+     */
     protected function addBackToWebsiteMenu()
     {
-        $app = $this->app;
-
-        $this->app['events']->listen('orchestra.ready: admin', function () use ($app) {
-            if (! $app['orchestra.app']->installed()) {
-                return ;
-            }
-
-            $app['orchestra.platform.menu']->add('back-to-website', '^:home')
-                ->link(handles('app::/'))
-                ->title('Back to website');
-        });
+        $this->app['events']->listen('orchestra.ready: admin', BackToWebsite::class);
     }
 
     /**
@@ -50,6 +47,6 @@ class AppServiceProvider extends ServiceProvider
      */
     protected function addViewComposers()
     {
-        $this->app['view']->composer('layouts.partials.navigation', 'App\Composers\Navbar');
+        $this->app['view']->composer('layouts.partials.navigation', Navbar::class);
     }
 }
