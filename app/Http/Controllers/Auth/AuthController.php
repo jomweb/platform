@@ -4,7 +4,6 @@ use Illuminate\Http\Request;
 use Illuminate\Session\Store;
 use App\Http\Controllers\Controller;
 use Orchestra\Contracts\Html\Form\Grid;
-use Orchestra\Contracts\Html\Form\Fieldset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Orchestra\Foundation\Processor\AuthenticateUser;
 use Orchestra\Foundation\Processor\Account\ProfileCreator;

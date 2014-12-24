@@ -38,8 +38,12 @@ $router->get('social/{provider}/connect', [
 |--------------------------------------------------------------------------
 */
 
-$router->get('profile/create', 'Account\ProfileController@create');
-$router->post('profile', 'Account\ProfileController@store');
-$router->get('profile', 'Account\ProfileController@show');
-$router->get('profile/edit', 'Account\ProfileController@edit');
-$router->put('profile', 'Account\ProfileController@update');
+$router->group(['prefix' => 'profile'], function ($router) {
+    $router->get('create', 'Account\ProfileController@create');
+    $router->get('edit', 'Account\ProfileController@edit');
+
+    $router->get('/', 'Account\ProfileController@show');
+    $router->post('/', 'Account\ProfileController@store');
+    $router->put('/', 'Account\ProfileController@update');
+});
+

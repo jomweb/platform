@@ -18,6 +18,6 @@ class User extends Eloquent
      */
     public function profile()
     {
-        return $this->hasOne('App\Profile', 'user_id');
+        return $this->hasOne(Profile::class, 'user_id');
     }
 }

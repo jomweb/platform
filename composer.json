@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
+		"php": ">=5.5.0",
 		"orchestra/foundation": "3.0.*",
 		"orchestra/installer": "3.0.*",
 		"orchestra/control": "3.0.*",
