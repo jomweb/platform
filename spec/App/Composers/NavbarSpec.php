@@ -1,10 +1,10 @@
 <?php namespace spec\App\Composers;
 
-use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Contracts\View\View;
-use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
+use PhpSpec\ObjectBehavior;
 use Orchestra\Contracts\Auth\Guard;
+use Illuminate\Contracts\View\View;
+use Illuminate\Contracts\Auth\Authenticatable;
 
 class NavbarSpec extends ObjectBehavior
 {
