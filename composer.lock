@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c5719ad8ae0df8e41cd8b1f33ebc67f",
+    "hash": "042d4b446f65e96d3b69543572e8ad10",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -699,12 +699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "21a6ffe08798b8a3fff3921e570aff23a7cb93af"
+                "reference": "5d8b712bd25b98b9ee4c321fe8cb537844916878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/21a6ffe08798b8a3fff3921e570aff23a7cb93af",
-                "reference": "21a6ffe08798b8a3fff3921e570aff23a7cb93af",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5d8b712bd25b98b9ee4c321fe8cb537844916878",
+                "reference": "5d8b712bd25b98b9ee4c321fe8cb537844916878",
                 "shasum": ""
             },
             "require": {
@@ -737,6 +737,7 @@
             },
             "replace": {
                 "illuminate/auth": "self.version",
+                "illuminate/bus": "self.version",
                 "illuminate/cache": "self.version",
                 "illuminate/config": "self.version",
                 "illuminate/console": "self.version",
@@ -754,6 +755,7 @@
                 "illuminate/log": "self.version",
                 "illuminate/mail": "self.version",
                 "illuminate/pagination": "self.version",
+                "illuminate/pipeline": "self.version",
                 "illuminate/queue": "self.version",
                 "illuminate/redis": "self.version",
                 "illuminate/routing": "self.version",
@@ -807,7 +809,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-24 02:48:23"
+            "time": "2014-12-25 07:17:11"
         },
         {
             "name": "laravel/socialite",
@@ -4548,7 +4550,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.0"
+        "php": ">=5.6.0"
     },
     "platform-dev": []
 }
