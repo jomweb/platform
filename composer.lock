@@ -699,12 +699,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5d8b712bd25b98b9ee4c321fe8cb537844916878"
+                "reference": "9ad9537befc431655abaeda4457b51720c1fc9b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5d8b712bd25b98b9ee4c321fe8cb537844916878",
-                "reference": "5d8b712bd25b98b9ee4c321fe8cb537844916878",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9ad9537befc431655abaeda4457b51720c1fc9b3",
+                "reference": "9ad9537befc431655abaeda4457b51720c1fc9b3",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +809,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-12-25 07:17:11"
+            "time": "2014-12-29 04:45:41"
         },
         {
             "name": "laravel/socialite",
@@ -2133,12 +2133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/optimize.git",
-                "reference": "0050150d4267698225a125a1752bfe1fda746e28"
+                "reference": "755e072db9761f16b8bdb5700d5d877508ca2c38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/optimize/zipball/0050150d4267698225a125a1752bfe1fda746e28",
-                "reference": "0050150d4267698225a125a1752bfe1fda746e28",
+                "url": "https://api.github.com/repos/orchestral/optimize/zipball/755e072db9761f16b8bdb5700d5d877508ca2c38",
+                "reference": "755e072db9761f16b8bdb5700d5d877508ca2c38",
                 "shasum": ""
             },
             "require": {
@@ -2179,7 +2179,7 @@
                 "orchestra-platform",
                 "orchestral"
             ],
-            "time": "2014-12-19 15:30:10"
+            "time": "2014-12-29 11:51:04"
         },
         {
             "name": "orchestra/publisher",
@@ -3808,16 +3808,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.13",
+            "version": "2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "0e7d2eec5554f869fa7a4ec2d21e4b37af943ea5"
+                "reference": "ca158276c1200cc27f5409a5e338486bc0b4fc94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/0e7d2eec5554f869fa7a4ec2d21e4b37af943ea5",
-                "reference": "0e7d2eec5554f869fa7a4ec2d21e4b37af943ea5",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/ca158276c1200cc27f5409a5e338486bc0b4fc94",
+                "reference": "ca158276c1200cc27f5409a5e338486bc0b4fc94",
                 "shasum": ""
             },
             "require": {
@@ -3869,7 +3869,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-03 06:41:44"
+            "time": "2014-12-26 13:28:33"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4055,16 +4055,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.4.0",
+            "version": "4.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "bbe7bcb83b6ec1a9eaabbe1b70d4795027c53ee0"
+                "reference": "6a5e49a86ce5e33b8d0657abe145057fc513543a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bbe7bcb83b6ec1a9eaabbe1b70d4795027c53ee0",
-                "reference": "bbe7bcb83b6ec1a9eaabbe1b70d4795027c53ee0",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6a5e49a86ce5e33b8d0657abe145057fc513543a",
+                "reference": "6a5e49a86ce5e33b8d0657abe145057fc513543a",
                 "shasum": ""
             },
             "require": {
@@ -4122,7 +4122,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-12-05 06:49:03"
+            "time": "2014-12-28 07:57:05"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
