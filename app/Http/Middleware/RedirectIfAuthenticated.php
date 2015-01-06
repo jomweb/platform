@@ -3,9 +3,8 @@
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Contracts\Routing\Middleware;
 
-class RedirectIfAuthenticated implements Middleware
+class RedirectIfAuthenticated
 {
     /**
      * The Guard implementation.
@@ -18,7 +17,6 @@ class RedirectIfAuthenticated implements Middleware
      * Create a new filter instance.
      *
      * @param  Guard  $auth
-     * @return void
      */
     public function __construct(Guard $auth)
     {

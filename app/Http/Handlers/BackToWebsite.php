@@ -1,4 +1,4 @@
-<?php namespace App\Handlers;
+<?php namespace App\Http\Handlers;
 
 use Orchestra\Foundation\Support\MenuHandler;
 
