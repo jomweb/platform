@@ -89,16 +89,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "d661047fb347cc384591fe3dbe5f62886f203416"
+                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/d661047fb347cc384591fe3dbe5f62886f203416",
-                "reference": "d661047fb347cc384591fe3dbe5f62886f203416",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
+                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-01-04 06:54:13"
+            "time": "2015-01-08 15:21:43"
         },
         {
             "name": "doctrine/inflector",
@@ -212,16 +212,16 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.1.4",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a"
+                "reference": "0d288083922576bcd55389bcf1cd8ac1db7adaa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
-                "reference": "495e7ac73bb5fde6b857b88ff2bb1b5e79a4263a",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/0d288083922576bcd55389bcf1cd8ac1db7adaa7",
+                "reference": "0d288083922576bcd55389bcf1cd8ac1db7adaa7",
                 "shasum": ""
             },
             "type": "library",
@@ -247,24 +247,24 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2014-11-29 02:29:14"
+            "time": "2015-01-12 21:24:13"
         },
         {
             "name": "erusev/parsedown-extra",
-            "version": "0.2.6",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown-extra.git",
-                "reference": "77f604b65b08550f229c2e79c0427c84c0c0979e"
+                "reference": "6a4eb9507b6a5827cc8274b00f2784b9acbd29df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/77f604b65b08550f229c2e79c0427c84c0c0979e",
-                "reference": "77f604b65b08550f229c2e79c0427c84c0c0979e",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/6a4eb9507b6a5827cc8274b00f2784b9acbd29df",
+                "reference": "6a4eb9507b6a5827cc8274b00f2784b9acbd29df",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "~1.1"
+                "erusev/parsedown": "~1.4"
             },
             "type": "library",
             "autoload": {
@@ -291,7 +291,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2014-11-20 20:21:03"
+            "time": "2015-01-13 00:04:28"
         },
         {
             "name": "guzzle/guzzle",
@@ -604,16 +604,16 @@
         },
         {
             "name": "jeremeamia/SuperClosure",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeremeamia/super_closure.git",
-                "reference": "d05400085f7d4ae6f20ba30d36550836c0d061e8"
+                "reference": "4d89ca74994feab128ea46d5b3add92e6cb84554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/d05400085f7d4ae6f20ba30d36550836c0d061e8",
-                "reference": "d05400085f7d4ae6f20ba30d36550836c0d061e8",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/4d89ca74994feab128ea46d5b3add92e6cb84554",
+                "reference": "4d89ca74994feab128ea46d5b3add92e6cb84554",
                 "shasum": ""
             },
             "require": {
@@ -648,7 +648,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2013-10-09 04:20:00"
+            "time": "2015-01-10 01:09:28"
         },
         {
             "name": "laravel/framework",
@@ -656,12 +656,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9b108d85ce19300dfdd479fa4e05d9ea6e4e3abc"
+                "reference": "92f08a0e5579e7cfbdf9e062b49914f80d961b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9b108d85ce19300dfdd479fa4e05d9ea6e4e3abc",
-                "reference": "9b108d85ce19300dfdd479fa4e05d9ea6e4e3abc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/92f08a0e5579e7cfbdf9e062b49914f80d961b71",
+                "reference": "92f08a0e5579e7cfbdf9e062b49914f80d961b71",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +767,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-01-07 21:02:31"
+            "time": "2015-01-12 20:31:20"
         },
         {
             "name": "laravel/socialite",
@@ -829,12 +829,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "84ed39a44f117f7fed74c41e4e60dc47954edc47"
+                "reference": "59f43cc2624145ea2f091ce10ddaf389a4296d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/84ed39a44f117f7fed74c41e4e60dc47954edc47",
-                "reference": "84ed39a44f117f7fed74c41e4e60dc47954edc47",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/59f43cc2624145ea2f091ce10ddaf389a4296d86",
+                "reference": "59f43cc2624145ea2f091ce10ddaf389a4296d86",
                 "shasum": ""
             },
             "require": {
@@ -856,18 +856,17 @@
                 "tedivm/stash": "~0.12.0"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Allows you to use AWS S3 storage",
-                "barracuda/copy": "Allows you to use Copy.com storage",
-                "dropbox/dropbox-sdk": "Allows you to use Dropbox storage",
                 "ext-fileinfo": "Required for MimeType",
-                "guzzlehttp/guzzle": "Allows you to use http files (reading only)",
                 "league/event": "Required for EventableFilesystem",
+                "league/flysystem-aws-s3-v2": "Use S3 storage with AWS SDK v2",
+                "league/flysystem-aws-s3-v3": "Use S3 storage with AWS SDK v3",
                 "league/flysystem-azure": "Allows you to use Windows Azure Blob storage",
+                "league/flysystem-copy": "Allows you to use Copy.com storage",
+                "league/flysystem-dropbox": "Use Dropbox storage",
+                "league/flysystem-rackspace": "Allows you to use Rackspace Cloud Files",
                 "league/flysystem-webdav": "Allows you to use WebDAV storage",
                 "phpseclib/phpseclib": "Allows SFTP server storage",
                 "predis/predis": "Allows you to use Predis for caching",
-                "rackspace/php-opencloud": "Allows you to use Rackspace Cloud Files",
-                "sabre/dav": "Enables WebDav support",
                 "tedivm/stash": "Allows you to use Stash as cache implementation"
             },
             "type": "library",
@@ -909,26 +908,25 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-01-07 15:26:54"
+            "time": "2015-01-11 15:40:33"
         },
         {
             "name": "league/oauth1-client",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth1-client.git",
-                "reference": "f1db4b8f97605cd6e88cf2a4e164b5cf5e5b68e8"
+                "reference": "0d20bc4613cb1e87f5e32d94f9327811b2cb959c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/f1db4b8f97605cd6e88cf2a4e164b5cf5e5b68e8",
-                "reference": "f1db4b8f97605cd6e88cf2a4e164b5cf5e5b68e8",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/0d20bc4613cb1e87f5e32d94f9327811b2cb959c",
+                "reference": "0d20bc4613cb1e87f5e32d94f9327811b2cb959c",
                 "shasum": ""
             },
             "require": {
                 "guzzle/guzzle": "3.*",
-                "php": ">=5.3.0",
-                "symfony/http-foundation": "~2"
+                "php": ">=5.3.0"
             },
             "require-dev": {
                 "mockery/mockery": "0.7.2",
@@ -968,7 +966,7 @@
                 "oauth1",
                 "single sign on"
             ],
-            "time": "2014-01-31 23:08:45"
+            "time": "2015-01-11 08:51:52"
         },
         {
             "name": "monolog/monolog",
@@ -1044,20 +1042,23 @@
         },
         {
             "name": "mtdowling/cron-expression",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtdowling/cron-expression.git",
-                "reference": "a47ac8d5ec15049013792401af5a4d13e3dbe7f6"
+                "reference": "fd92e883195e5dfa77720b1868cf084b08be4412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mtdowling/cron-expression/zipball/a47ac8d5ec15049013792401af5a4d13e3dbe7f6",
-                "reference": "a47ac8d5ec15049013792401af5a4d13e3dbe7f6",
+                "url": "https://api.github.com/repos/mtdowling/cron-expression/zipball/fd92e883195e5dfa77720b1868cf084b08be4412",
+                "reference": "fd92e883195e5dfa77720b1868cf084b08be4412",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "autoload": {
@@ -1081,7 +1082,7 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2013-11-23 19:48:39"
+            "time": "2015-01-11 23:07:46"
         },
         {
             "name": "nesbot/carbon",
@@ -1491,12 +1492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/foundation.git",
-                "reference": "eec193fac5b6d2e7109f10d4eddc6548ee97f58f"
+                "reference": "d61800fe54855c92124098ba88c9cb99d32d1edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/foundation/zipball/eec193fac5b6d2e7109f10d4eddc6548ee97f58f",
-                "reference": "eec193fac5b6d2e7109f10d4eddc6548ee97f58f",
+                "url": "https://api.github.com/repos/orchestral/foundation/zipball/d61800fe54855c92124098ba88c9cb99d32d1edb",
+                "reference": "d61800fe54855c92124098ba88c9cb99d32d1edb",
                 "shasum": ""
             },
             "require": {
@@ -1560,25 +1561,23 @@
                 "orchestral",
                 "user-management"
             ],
-            "time": "2015-01-06 08:09:52"
+            "time": "2015-01-12 17:16:59"
         },
         {
             "name": "orchestra/html",
-            "version": "v3.0.0-BETA2",
+            "version": "v3.0.0-BETA3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/html.git",
-                "reference": "fae39da2f0189a6c96726d928cf319952f5bc260"
+                "reference": "91c5f34b4e534bbafcefa8607ee9b6b49b0cf684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/html/zipball/fae39da2f0189a6c96726d928cf319952f5bc260",
-                "reference": "fae39da2f0189a6c96726d928cf319952f5bc260",
+                "url": "https://api.github.com/repos/orchestral/html/zipball/91c5f34b4e534bbafcefa8607ee9b6b49b0cf684",
+                "reference": "91c5f34b4e534bbafcefa8607ee9b6b49b0cf684",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "5.0.*",
-                "orchestra/contracts": "3.0.*",
                 "orchestra/support": "3.0.*",
                 "php": ">=5.4.0"
             },
@@ -1586,8 +1585,7 @@
                 "illuminate/database": "5.0.*",
                 "illuminate/routing": "5.0.*",
                 "illuminate/translation": "5.0.*",
-                "mockery/mockery": "0.9.*",
-                "patchwork/utf8": "1.1.*"
+                "mockery/mockery": "0.9.*"
             },
             "suggest": {
                 "laravel/framework": "Allow using orchestra/html component outside of Orchestra Platform",
@@ -1628,7 +1626,7 @@
                 "orchestral",
                 "table"
             ],
-            "time": "2015-01-01 18:11:13"
+            "time": "2015-01-13 00:03:06"
         },
         {
             "name": "orchestra/imagine",
@@ -1746,16 +1744,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/kernel.git",
-                "reference": "adec739cbb810874f9a77ab3cae776ff7929d2df"
+                "reference": "98ee61382bc6c846e16f63e2e878562f81ec1267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/kernel/zipball/adec739cbb810874f9a77ab3cae776ff7929d2df",
-                "reference": "adec739cbb810874f9a77ab3cae776ff7929d2df",
+                "url": "https://api.github.com/repos/orchestral/kernel/zipball/98ee61382bc6c846e16f63e2e878562f81ec1267",
+                "reference": "98ee61382bc6c846e16f63e2e878562f81ec1267",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "5.0.*",
                 "orchestra/support-core": "3.0.*",
                 "php": ">=5.4.0"
             },
@@ -1795,7 +1792,7 @@
                 }
             ],
             "description": "Kernel for Orchestra Platform",
-            "time": "2015-01-08 02:17:33"
+            "time": "2015-01-12 12:04:44"
         },
         {
             "name": "orchestra/memory",
@@ -3394,12 +3391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "75017a6c2b151b0e18801dc99eac88bbaeee1d12"
+                "reference": "45e456ee2534654afb056244265c50da3629afed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/75017a6c2b151b0e18801dc99eac88bbaeee1d12",
-                "reference": "75017a6c2b151b0e18801dc99eac88bbaeee1d12",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/45e456ee2534654afb056244265c50da3629afed",
+                "reference": "45e456ee2534654afb056244265c50da3629afed",
                 "shasum": ""
             },
             "require": {
@@ -3447,7 +3444,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2015-01-07 16:08:58"
+            "time": "2015-01-08 08:26:01"
         },
         {
             "name": "orchestra/testing",
@@ -3577,16 +3574,16 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60"
+                "reference": "66a1df93099282b1514e9e001fcf6e9393f7783d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60",
-                "reference": "3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/66a1df93099282b1514e9e001fcf6e9393f7783d",
+                "reference": "66a1df93099282b1514e9e001fcf6e9393f7783d",
                 "shasum": ""
             },
             "require": {
@@ -3602,7 +3599,7 @@
                 "symfony/yaml": "~2.1"
             },
             "require-dev": {
-                "behat/behat": "~3.0",
+                "behat/behat": "~3.0,>=3.0.11",
                 "bossa/phpspec2-expect": "~1.0",
                 "symfony/filesystem": "~2.1"
             },
@@ -3649,7 +3646,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2014-12-14 09:37:32"
+            "time": "2015-01-09 13:21:45"
         },
         {
             "name": "phpspec/prophecy",
