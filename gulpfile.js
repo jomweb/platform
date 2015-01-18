@@ -1,4 +1,4 @@
-var elixir = require('laravel-elixir');
+var dir, elixir = require('laravel-elixir');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,13 +11,23 @@ var elixir = require('laravel-elixir');
  |
  */
 
+dir = {
+  asset: {
+    css: 'public/css',
+    img: 'public/img',
+    js: 'public/js'
+  },
+  theme: 'resources/html',
+  vendor: 'vendor/bower_components'
+};
+
 elixir(function(mix) {
   mix.sass('app.scss')
-    .copy('resources/html/assets/css/ionicons.css', 'public/css/vendor/ionicons.css')
-    .copy('resources/html/assets/js/ie10-viewport-bug-workaround.js', 'public/js/ie.js')
-    .copy('vendor/bower_components/jquery/dist/jquery.min.js', 'public/js/vendor/jquery.js')
-    .copy('vendor/bower_components/jquery/dist/jquery.min.map', 'public/js/vendor/jquery.min.map')
-    .copy('vendor/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js', 'public/js/vendor/bootstrap.js')
-    .copy('vendor/bower_components/font-awesome/css/font-awesome.min.css', 'public/css/vendor/font-awesome.css')
-    .copy('vendor/bower_components/font-awesome/fonts', 'public/css/fonts');
+    .copy(dir.theme+'/assets/css/ionicons.css', dir.asset.css+'/vendor/ionicons.css')
+    .copy(dir.theme+'/assets/js/ie10-viewport-bug-workaround.js', dir.asset.js+'/ie.js')
+    .copy(dir.vendor+'/jquery/dist/jquery.min.js', dir.asset.js+'/vendor/jquery.js')
+    .copy(dir.vendor+'/jquery/dist/jquery.min.map', dir.asset.js+'/vendor/jquery.min.map')
+    .copy(dir.vendor+'/bootstrap-sass-official/assets/javascripts/bootstrap.js', dir.asset.js+'/vendor/bootstrap.js')
+    .copy(dir.vendor+'/font-awesome/css/font-awesome.min.css', dir.asset.css+'/vendor/font-awesome.css')
+    .copy(dir.vendor+'/font-awesome/fonts', dir.asset.css+'/fonts');
 });
