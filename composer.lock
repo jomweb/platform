@@ -3625,6 +3625,49 @@
             "time": "2015-02-05 00:26:32"
         },
         {
+            "name": "orchestra/testing",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/testing.git",
+                "reference": "29b5a83e4545e1bad07b294058cb8fe6db8c2064"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/testing/zipball/29b5a83e4545e1bad07b294058cb8fe6db8c2064",
+                "reference": "29b5a83e4545e1bad07b294058cb8fe6db8c2064",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/foundation": "3.0.*",
+                "orchestra/testbench": "3.0.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Testing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Orchestra Platform Testing Helper",
+            "time": "2015-02-06 03:15:47"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.4",
             "source": {
