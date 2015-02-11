@@ -11,7 +11,7 @@
 		"orchestra/imagine": "~3.0",
 		"orchestra/installer": "~3.0",
 		"orchestra/control": "~3.0",
-		"orchestra/oneauth": "~3.0",
+		"orchestra/oneauth": "~3.0@dev",
 		"erusev/parsedown-extra": "~0.2"
 	},
 	"require-dev": {
@@ -50,7 +50,5 @@
 	},
 	"config": {
 		"preferred-install": "dist"
-	},
-	"prefer-stable": true,
-	"minimum-stability": "dev"
+	}
 }

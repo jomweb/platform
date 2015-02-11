@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0145c9cfe742f3de41bb49d80a8bcea2",
+    "hash": "9dae6a0234ada9990472a2fd2dea647b",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -68,16 +68,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad"
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
-                "reference": "6a7b0391b2baf0bfdca3ec0c8d33ff379c2835ad",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-01-08 15:21:43"
+            "time": "2015-02-10 06:19:18"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -885,16 +885,16 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "dev-master",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "d380a89776707f0d21c771e170dc4b18d3cd503a"
+                "reference": "ca028df357d9585be55ec2db48f591dbbfbdd3cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/d380a89776707f0d21c771e170dc4b18d3cd503a",
-                "reference": "d380a89776707f0d21c771e170dc4b18d3cd503a",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/ca028df357d9585be55ec2db48f591dbbfbdd3cf",
+                "reference": "ca028df357d9585be55ec2db48f591dbbfbdd3cf",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +912,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -935,7 +935,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2015-01-27 18:02:02"
+            "time": "2015-01-23 19:59:22"
         },
         {
             "name": "league/flysystem",
@@ -1351,29 +1351,30 @@
         },
         {
             "name": "orchestra/auth",
-            "version": "v3.0.0-BETA1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/auth.git",
-                "reference": "059f097adcc2f81fdab3a1a85f8efd3722a47e60"
+                "reference": "1f34143f7c6c810a75cad5f65a5870266e1a1c79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/auth/zipball/059f097adcc2f81fdab3a1a85f8efd3722a47e60",
-                "reference": "059f097adcc2f81fdab3a1a85f8efd3722a47e60",
+                "url": "https://api.github.com/repos/orchestral/auth/zipball/1f34143f7c6c810a75cad5f65a5870266e1a1c79",
+                "reference": "1f34143f7c6c810a75cad5f65a5870266e1a1c79",
                 "shasum": ""
             },
             "require": {
-                "orchestra/contracts": "3.0.*",
                 "orchestra/memory": "3.0.*",
                 "orchestra/notifier": "3.0.*",
                 "php": ">=5.4.0"
             },
+            "replace": {
+                "orchestra/authorization": "self.version"
+            },
             "require-dev": {
                 "illuminate/auth": "5.0.*",
                 "illuminate/database": "5.0.*",
-                "mockery/mockery": "0.9.*",
-                "patchwork/utf8": "1.1.*"
+                "mockery/mockery": "0.9.*"
             },
             "suggest": {
                 "laravel/framework": "Allow using orchestra/auth component outside of Orchestra Platform",
@@ -1383,7 +1384,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1417,7 +1418,7 @@
                 "permission",
                 "rbac"
             ],
-            "time": "2014-12-09 05:06:08"
+            "time": "2015-02-09 09:26:14"
         },
         {
             "name": "orchestra/avatar",
@@ -1481,16 +1482,16 @@
         },
         {
             "name": "orchestra/control",
-            "version": "v3.0.0-BETA3",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/control.git",
-                "reference": "d2ae1f8102efe57e2d816f61c883c14fcb8cafdc"
+                "reference": "db641b0a5e7d08cd0a4897a5646a7878761a9a0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/control/zipball/d2ae1f8102efe57e2d816f61c883c14fcb8cafdc",
-                "reference": "d2ae1f8102efe57e2d816f61c883c14fcb8cafdc",
+                "url": "https://api.github.com/repos/orchestral/control/zipball/db641b0a5e7d08cd0a4897a5646a7878761a9a0d",
+                "reference": "db641b0a5e7d08cd0a4897a5646a7878761a9a0d",
                 "shasum": ""
             },
             "require": {
@@ -1504,7 +1505,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1536,20 +1537,20 @@
                 "theme",
                 "timezone"
             ],
-            "time": "2015-01-20 05:12:14"
+            "time": "2015-02-10 10:30:19"
         },
         {
             "name": "orchestra/extension",
-            "version": "v3.0.0-BETA2",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/extension.git",
-                "reference": "e57f3a6055c0464ea098eb97580115dfe841b895"
+                "reference": "329b38ccc8b7ea30670e3235e211ba614193fc92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/extension/zipball/e57f3a6055c0464ea098eb97580115dfe841b895",
-                "reference": "e57f3a6055c0464ea098eb97580115dfe841b895",
+                "url": "https://api.github.com/repos/orchestral/extension/zipball/329b38ccc8b7ea30670e3235e211ba614193fc92",
+                "reference": "329b38ccc8b7ea30670e3235e211ba614193fc92",
                 "shasum": ""
             },
             "require": {
@@ -1570,7 +1571,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1597,20 +1598,20 @@
                 "orchestra-platform",
                 "orchestral"
             ],
-            "time": "2015-01-13 12:05:14"
+            "time": "2015-02-11 03:19:28"
         },
         {
             "name": "orchestra/foundation",
-            "version": "v3.0.0-BETA1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/foundation.git",
-                "reference": "86af4183dd1a9b70bf228104b3c6692800a02d60"
+                "reference": "93f8ef5b284486992ac7d56e85f2fad15c69fb64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/foundation/zipball/86af4183dd1a9b70bf228104b3c6692800a02d60",
-                "reference": "86af4183dd1a9b70bf228104b3c6692800a02d60",
+                "url": "https://api.github.com/repos/orchestral/foundation/zipball/93f8ef5b284486992ac7d56e85f2fad15c69fb64",
+                "reference": "93f8ef5b284486992ac7d56e85f2fad15c69fb64",
                 "shasum": ""
             },
             "require": {
@@ -1674,7 +1675,7 @@
                 "orchestral",
                 "user-management"
             ],
-            "time": "2015-02-06 03:20:43"
+            "time": "2015-02-11 03:20:55"
         },
         {
             "name": "orchestra/html",
@@ -1798,16 +1799,16 @@
         },
         {
             "name": "orchestra/installer",
-            "version": "v3.0.0-BETA1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/installer.git",
-                "reference": "d91ae779f227f2a880235f3d105cff19d816dd79"
+                "reference": "3364caa6621cb58d6d30eb9f66ba976872175013"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/installer/zipball/d91ae779f227f2a880235f3d105cff19d816dd79",
-                "reference": "d91ae779f227f2a880235f3d105cff19d816dd79",
+                "url": "https://api.github.com/repos/orchestral/installer/zipball/3364caa6621cb58d6d30eb9f66ba976872175013",
+                "reference": "3364caa6621cb58d6d30eb9f66ba976872175013",
                 "shasum": ""
             },
             "require": {
@@ -1816,12 +1817,12 @@
             "require-dev": {
                 "mockery/mockery": "0.9.*",
                 "orchestra/foundation": "3.0.*",
-                "orchestra/testbench": "3.0.*"
+                "orchestra/testing": "3.0.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1847,20 +1848,20 @@
                 "orchestra-platform",
                 "orchestral"
             ],
-            "time": "2014-12-09 06:20:46"
+            "time": "2015-02-06 00:09:18"
         },
         {
             "name": "orchestra/kernel",
-            "version": "v3.0.0-BETA2",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/kernel.git",
-                "reference": "29fa37481bbfb0575bb4a703f95edd288a95c53a"
+                "reference": "314654db2648d87d8a5a00951098f72ed3d3e2e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/kernel/zipball/29fa37481bbfb0575bb4a703f95edd288a95c53a",
-                "reference": "29fa37481bbfb0575bb4a703f95edd288a95c53a",
+                "url": "https://api.github.com/repos/orchestral/kernel/zipball/314654db2648d87d8a5a00951098f72ed3d3e2e8",
+                "reference": "314654db2648d87d8a5a00951098f72ed3d3e2e8",
                 "shasum": ""
             },
             "require": {
@@ -1903,7 +1904,7 @@
                 }
             ],
             "description": "Kernel for Orchestra Platform",
-            "time": "2015-02-07 05:27:44"
+            "time": "2015-02-10 09:26:07"
         },
         {
             "name": "orchestra/memory",
@@ -2149,16 +2150,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/oneauth.git",
-                "reference": "6702746df3f2307f498d672a0dddd67e8fc5c21e"
+                "reference": "080e194523005ae68a299facda2ab96dee2bbaa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/oneauth/zipball/6702746df3f2307f498d672a0dddd67e8fc5c21e",
-                "reference": "6702746df3f2307f498d672a0dddd67e8fc5c21e",
+                "url": "https://api.github.com/repos/orchestral/oneauth/zipball/080e194523005ae68a299facda2ab96dee2bbaa3",
+                "reference": "080e194523005ae68a299facda2ab96dee2bbaa3",
                 "shasum": ""
             },
             "require": {
-                "laravel/socialite": "dev-master",
+                "laravel/socialite": "~2.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -2167,7 +2168,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -2186,20 +2187,20 @@
                 }
             ],
             "description": "[WIP] Social Authentication Extension for Orchestra Platform",
-            "time": "2014-12-13 00:57:32"
+            "time": "2015-02-11 13:25:39"
         },
         {
             "name": "orchestra/optimize",
-            "version": "v3.0.0-BETA1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/optimize.git",
-                "reference": "8bed2d9cd53e5c741055b1058b88add9e576f19d"
+                "reference": "7ed0be376991a71bb97f98a43c651f16ba1699cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/optimize/zipball/8bed2d9cd53e5c741055b1058b88add9e576f19d",
-                "reference": "8bed2d9cd53e5c741055b1058b88add9e576f19d",
+                "url": "https://api.github.com/repos/orchestral/optimize/zipball/7ed0be376991a71bb97f98a43c651f16ba1699cc",
+                "reference": "7ed0be376991a71bb97f98a43c651f16ba1699cc",
                 "shasum": ""
             },
             "require": {
@@ -2240,20 +2241,20 @@
                 "orchestra-platform",
                 "orchestral"
             ],
-            "time": "2015-02-06 03:28:28"
+            "time": "2015-02-11 01:07:06"
         },
         {
             "name": "orchestra/publisher",
-            "version": "v3.0.0-BETA1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/publisher.git",
-                "reference": "72945c72e05761e7ebf718e26b93fff3798d11d2"
+                "reference": "200ce233fea51e053bebd4b42fd6e75fdcb28e81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/publisher/zipball/72945c72e05761e7ebf718e26b93fff3798d11d2",
-                "reference": "72945c72e05761e7ebf718e26b93fff3798d11d2",
+                "url": "https://api.github.com/repos/orchestral/publisher/zipball/200ce233fea51e053bebd4b42fd6e75fdcb28e81",
+                "reference": "200ce233fea51e053bebd4b42fd6e75fdcb28e81",
                 "shasum": ""
             },
             "require": {
@@ -2275,7 +2276,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -2302,7 +2303,7 @@
                 "orchestral",
                 "orchestral-platform"
             ],
-            "time": "2014-12-22 01:28:42"
+            "time": "2015-02-11 00:39:07"
         },
         {
             "name": "orchestra/support",
@@ -3564,21 +3565,71 @@
             "time": "2014-10-13 12:58:55"
         },
         {
-            "name": "orchestra/testbench",
-            "version": "v3.0.1",
+            "name": "orchestra/database",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/orchestral/testbench.git",
-                "reference": "94e9e4a52027aee2eb97d985c544604399ab6f92"
+                "url": "https://github.com/orchestral/database.git",
+                "reference": "2232c9d5750894acf70153cc1a3d4f85b04836c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/94e9e4a52027aee2eb97d985c544604399ab6f92",
-                "reference": "94e9e4a52027aee2eb97d985c544604399ab6f92",
+                "url": "https://api.github.com/repos/orchestral/database/zipball/2232c9d5750894acf70153cc1a3d4f85b04836c6",
+                "reference": "2232c9d5750894acf70153cc1a3d4f85b04836c6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.0.*",
+                "illuminate/database": "5.0.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Database\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                },
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell"
+                }
+            ],
+            "description": "Database Component for Orchestra Platform",
+            "time": "2015-02-10 09:20:46"
+        },
+        {
+            "name": "orchestra/testbench",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/testbench.git",
+                "reference": "86b631415d442582b434db38f598da51144e539c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/86b631415d442582b434db38f598da51144e539c",
+                "reference": "86b631415d442582b434db38f598da51144e539c",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "5.0.*",
+                "orchestra/database": "3.0.*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -3622,20 +3673,20 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2015-02-05 00:26:32"
+            "time": "2015-02-10 23:31:50"
         },
         {
             "name": "orchestra/testing",
-            "version": "3.0.x-dev",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testing.git",
-                "reference": "29b5a83e4545e1bad07b294058cb8fe6db8c2064"
+                "reference": "a2967503075aaef9df2c162a0c1c2dceeaabd933"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testing/zipball/29b5a83e4545e1bad07b294058cb8fe6db8c2064",
-                "reference": "29b5a83e4545e1bad07b294058cb8fe6db8c2064",
+                "url": "https://api.github.com/repos/orchestral/testing/zipball/a2967503075aaef9df2c162a0c1c2dceeaabd933",
+                "reference": "a2967503075aaef9df2c162a0c1c2dceeaabd933",
                 "shasum": ""
             },
             "require": {
@@ -3665,7 +3716,7 @@
                 }
             ],
             "description": "Orchestra Platform Testing Helper",
-            "time": "2015-02-06 03:15:47"
+            "time": "2015-02-11 01:13:45"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -4676,9 +4727,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "orchestra/oneauth": 20
+    },
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.6.0"
