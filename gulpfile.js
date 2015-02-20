@@ -36,8 +36,9 @@ elixir(function(mix) {
 
   mix.styles([
       'app.css'
-    ], dir.asset.css+'/all.css', dir.asset.css)
-    .scripts([
+    ], dir.asset.css+'/all.css', dir.asset.css);
+
+  mix.scripts([
       'vendor/jquery.min.js',
       'vendor/bootstrap.min.js'
     ], dir.asset.js+'/all.js', dir.asset.js);
