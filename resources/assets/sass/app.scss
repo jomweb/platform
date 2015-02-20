@@ -7,5 +7,8 @@ $fa-font-path: "/resources/fonts" !default;
 $ionicons-font-path: "/resources/fonts" !default;
 @import "../../../vendor/bower_components/ionicons/scss/ionicons";
 
+/*!
+ * Application
+ */
 @import "partials/grid";
 @import "partials/theme";

@@ -221,10 +221,10 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url('/resources/img/header.jpg') no-repeat center top;
+	background: url("/resources/img/header.jpg") no-repeat;
 	padding-top: 250px;
-	background-attachment: relative;
-	background-position: center center;
+	background-position: center top;
+	background-attachment: relative !important;
 	min-height: 700px;
 	width: 100%;
 
