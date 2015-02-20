@@ -12,5 +12,4 @@
 	</div>
 </footer>
 
-<script src="{{ asset('js/vendor/jquery.js') }}"></script>
-<script src="{{ asset('js/vendor/bootstrap.js') }}"></script>
+<script src="{{ elixir('resources/js/all.js') }}"></script>

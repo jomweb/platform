@@ -7,12 +7,10 @@
 {!! HTML::title() !!}
 
 <!-- Custom styles for this template -->
-<link href="{!! asset('css/vendor/ionicons.css') !!}" rel="stylesheet">
-<link href="{!! asset('css/app.css') !!}" rel="stylesheet">
-
+<link href="{!! elixir('resources/css/all.css') !!}" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="{!! asset('js/ie.js') !!}"></script>
+<script src="{!! asset('resources/js/ie.js') !!}"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
