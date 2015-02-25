@@ -194,7 +194,6 @@ return [
         'DB'         => 'Illuminate\Support\Facades\DB',
         'Eloquent'   => 'Illuminate\Database\Eloquent\Model',
         'Event'      => 'Illuminate\Support\Facades\Event',
-        'Facile'     => 'Orchestra\Support\Facades\Facile',
         'File'       => 'Illuminate\Support\Facades\File',
         'Form'       => 'Orchestra\Support\Facades\Form',
         'Foundation' => 'Orchestra\Support\Facades\Foundation',
