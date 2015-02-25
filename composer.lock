@@ -800,16 +800,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b1aea041cbc0cd54563e2d3709a54a71eed57653"
+                "reference": "43637b796f1ac0b1a960984231251ff04b438006"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b1aea041cbc0cd54563e2d3709a54a71eed57653",
-                "reference": "b1aea041cbc0cd54563e2d3709a54a71eed57653",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/43637b796f1ac0b1a960984231251ff04b438006",
+                "reference": "43637b796f1ac0b1a960984231251ff04b438006",
                 "shasum": ""
             },
             "require": {
@@ -921,20 +921,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-13 19:10:59"
+            "time": "2015-02-20 16:22:21"
         },
         {
             "name": "laravel/socialite",
-            "version": "v2.0.1",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "7f96a35e8976faea4c282abcd5c196ef8ddfab7c"
+                "reference": "4ca0e2868fdfd3156c02c0d5c5612cbd8fa9b124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/7f96a35e8976faea4c282abcd5c196ef8ddfab7c",
-                "reference": "7f96a35e8976faea4c282abcd5c196ef8ddfab7c",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/4ca0e2868fdfd3156c02c0d5c5612cbd8fa9b124",
+                "reference": "4ca0e2868fdfd3156c02c0d5c5612cbd8fa9b124",
                 "shasum": ""
             },
             "require": {
@@ -975,7 +975,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2015-02-14 01:56:05"
+            "time": "2015-02-24 20:20:48"
         },
         {
             "name": "league/flysystem",
@@ -1391,16 +1391,16 @@
         },
         {
             "name": "orchestra/auth",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/auth.git",
-                "reference": "1f34143f7c6c810a75cad5f65a5870266e1a1c79"
+                "reference": "9e725c6b398d36828e790eba6f3cf5f6701a44f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/auth/zipball/1f34143f7c6c810a75cad5f65a5870266e1a1c79",
-                "reference": "1f34143f7c6c810a75cad5f65a5870266e1a1c79",
+                "url": "https://api.github.com/repos/orchestral/auth/zipball/9e725c6b398d36828e790eba6f3cf5f6701a44f0",
+                "reference": "9e725c6b398d36828e790eba6f3cf5f6701a44f0",
                 "shasum": ""
             },
             "require": {
@@ -1458,7 +1458,7 @@
                 "permission",
                 "rbac"
             ],
-            "time": "2015-02-09 09:26:14"
+            "time": "2015-02-21 01:17:17"
         },
         {
             "name": "orchestra/avatar",
@@ -1642,16 +1642,16 @@
         },
         {
             "name": "orchestra/foundation",
-            "version": "v3.0.3",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/foundation.git",
-                "reference": "6078d83490a8fda0d0b3e43fdb50f52d8e26ba14"
+                "reference": "6cdd804b25274d5ab5f6c93d6a8e0ae96877ba1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/foundation/zipball/6078d83490a8fda0d0b3e43fdb50f52d8e26ba14",
-                "reference": "6078d83490a8fda0d0b3e43fdb50f52d8e26ba14",
+                "url": "https://api.github.com/repos/orchestral/foundation/zipball/6cdd804b25274d5ab5f6c93d6a8e0ae96877ba1c",
+                "reference": "6cdd804b25274d5ab5f6c93d6a8e0ae96877ba1c",
                 "shasum": ""
             },
             "require": {
@@ -1715,7 +1715,7 @@
                 "orchestral",
                 "user-management"
             ],
-            "time": "2015-02-20 02:18:11"
+            "time": "2015-02-21 02:22:05"
         },
         {
             "name": "orchestra/html",
@@ -3650,16 +3650,16 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "86b631415d442582b434db38f598da51144e539c"
+                "reference": "2a5b53e9a3b6dae6c7093b59df68b8033790eafd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/86b631415d442582b434db38f598da51144e539c",
-                "reference": "86b631415d442582b434db38f598da51144e539c",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/2a5b53e9a3b6dae6c7093b59df68b8033790eafd",
+                "reference": "2a5b53e9a3b6dae6c7093b59df68b8033790eafd",
                 "shasum": ""
             },
             "require": {
@@ -3708,7 +3708,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2015-02-10 23:31:50"
+            "time": "2015-02-22 05:03:39"
         },
         {
             "name": "orchestra/testing",
