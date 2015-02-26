@@ -46,4 +46,3 @@ $router->group(['prefix' => 'profile'], function ($router) {
     $router->post('/', 'Account\ProfileController@store');
     $router->put('/', 'Account\ProfileController@update');
 });
-
