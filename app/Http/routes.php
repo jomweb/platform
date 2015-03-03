@@ -23,12 +23,12 @@ $router->get('home', 'HomeController@index');
 */
 
 $router->controllers([
-    'auth' => 'Auth\AuthController',
+    'auth'     => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
 ]);
 
 $router->get('social/{provider}/connect', [
-    'uses' => 'Auth\SocialController@connect',
+    'uses'  => 'Auth\SocialController@connect',
     'where' => ['provider' => '(facebook|github)'],
 ]);
 

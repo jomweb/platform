@@ -26,7 +26,8 @@ class WelcomeController extends Controller
     /**
      * Show the application welcome screen to the user.
      *
-     * @param  \Orchestra\Contracts\Foundation\Foundation  $foundation
+     * @param \Orchestra\Contracts\Foundation\Foundation $foundation
+     *
      * @return mixed
      */
     public function index(Foundation $foundation)

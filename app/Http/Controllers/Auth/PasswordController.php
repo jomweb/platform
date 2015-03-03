@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers\Auth;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Orchestra\Contracts\Auth\Listener\PasswordReset;
 use Orchestra\Contracts\Auth\Listener\PasswordResetLink;
 use Orchestra\Foundation\Processor\Account\PasswordBroker;
@@ -26,13 +26,13 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Create a new password controller instance.
      *
-     * @param  \Orchestra\Foundation\Processor\Account\PasswordBroker  $processor
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Orchestra\Foundation\Processor\Account\PasswordBroker $processor
+     * @param \Illuminate\Http\Request                               $request
      */
     public function __construct(PasswordBroker $processor, Request $request)
     {
         $this->processor = $processor;
-        $this->request = $request;
+        $this->request   = $request;
 
         $this->middleware('guest');
     }
@@ -60,14 +60,16 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Display the password reset view for the given token.
      *
-     * @param  string  $token
+     * @param string $token
+     *
      * @return mixed
-     * @throws
+     *
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
     public function getReset($token = null)
     {
         if (is_null($token)) {
-            throw new NotFoundHttpException;
+            throw new NotFoundHttpException();
         }
 
         return view('auth.reset')->with('token', $token);
@@ -88,7 +90,8 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Response when request password failed on validation.
      *
-     * @param  \Illuminate\Support\MessageBag|array $errors
+     * @param \Illuminate\Support\MessageBag|array $errors
+     *
      * @return mixed
      */
     public function resetLinkFailedValidation($errors)
@@ -99,7 +102,8 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Response when request reset password failed.
      *
-     * @param  string $response
+     * @param string $response
+     *
      * @return mixed
      */
     public function resetLinkFailed($response)
@@ -112,7 +116,8 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Response when request reset password succeed.
      *
-     * @param  string $response
+     * @param string $response
+     *
      * @return mixed
      */
     public function resetLinkSent($response)
@@ -125,7 +130,8 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Response when reset password failed.
      *
-     * @param  string $response
+     * @param string $response
+     *
      * @return mixed
      */
     public function passwordResetHasFailed($response)
@@ -140,7 +146,8 @@ class PasswordController extends Controller implements PasswordReset, PasswordRe
     /**
      * Response when reset password succeed.
      *
-     * @param  string $response
+     * @param string $response
+     *
      * @return mixed
      */
     public function passwordHasReset($response)

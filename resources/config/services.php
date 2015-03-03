@@ -15,15 +15,15 @@ return [
     */
 
     'facebook' => [
-        'client_id' => getenv('FACEBOOK_CLIENT_ID'),
+        'client_id'     => getenv('FACEBOOK_CLIENT_ID'),
         'client_secret' => getenv('FACEBOOK_CLIENT_SECRET'),
-        'redirect' => url('social/facebook/connect'),
+        'redirect'      => url('social/facebook/connect'),
     ],
 
     'github' => [
-        'client_id' => getenv('GITHUB_CLIENT_ID'),
+        'client_id'     => getenv('GITHUB_CLIENT_ID'),
         'client_secret' => getenv('GITHUB_CLIENT_SECRET'),
-        'redirect' => url('social/github/connect'),
+        'redirect'      => url('social/github/connect'),
     ],
 
     'mailgun' => [
@@ -36,7 +36,7 @@ return [
     ],
 
     'ses' => [
-        'key' => '',
+        'key'    => '',
         'secret' => '',
         'region' => 'us-east-1',
     ],
