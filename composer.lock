@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c237657e16d90d6f932831670c1dfe59",
+    "hash": "2e7932f5bc61f3cafb27c6c456cd49e2",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -3705,6 +3705,53 @@
             "time": "2015-02-18 19:35:59"
         },
         {
+            "name": "orchestra/studio",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/studio.git",
+                "reference": "1b36b9c4ce451f7459cc0054f4604d6bfd8600f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/studio/zipball/1b36b9c4ce451f7459cc0054f4604d6bfd8600f5",
+                "reference": "1b36b9c4ce451f7459cc0054f4604d6bfd8600f5",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/support": "3.0.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/console": "5.0.*",
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Studio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Code Generator for Orchestra Platform",
+            "time": "2015-03-09 12:01:56"
+        },
+        {
             "name": "orchestra/testbench",
             "version": "v3.0.4",
             "source": {
@@ -4868,7 +4915,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "orchestra/oneauth": 20
+        "orchestra/oneauth": 20,
+        "orchestra/studio": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

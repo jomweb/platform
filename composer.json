@@ -18,7 +18,8 @@
 		"orchestra/testing": "3.0.*",
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1",
-		"fabpot/php-cs-fixer": "~1.5"
+		"fabpot/php-cs-fixer": "~1.5",
+		"orchestra/studio": "3.0.*@dev"
 	},
 	"autoload": {
 		"classmap": [
