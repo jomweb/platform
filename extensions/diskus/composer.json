@@ -1,0 +1,19 @@
+{
+	"name": "orchestra/discuss",
+	"description": "Forum Extension for Orchestra Platform",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mior Muhammad Zaki",
+			"email": "crynobone@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"orchestra/contracts": "3.0.*"
+	},
+	"require-dev": {
+		"mockery/mockery": "0.9.*"
+	},
+	"minimum-stability": "dev"
+}

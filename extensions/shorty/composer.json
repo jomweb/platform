@@ -1,0 +1,30 @@
+{
+	"name": "orchestra/shorty",
+	"description": "URL Shortener Extension for Orchestra Platform",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mior Muhammad Zaki",
+			"email": "crynobone@gmail.com",
+			"homepage": "https://github.com/crynobone"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Orchestra\\Shorty\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=5.4.0",
+		"orchestra/contracts": "3.0.*"
+	},
+	"require-dev": {
+		"mockery/mockery": "0.9.*"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.0-dev"
+		}
+	},
+	"minimum-stability": "dev"
+}
