@@ -1,10 +1,13 @@
-<?php namespace spec\App\Composers;
+<?php
 
+namespace spec\App\Composers;
+
+use App\Composers\Navbar;
+use Illuminate\Contracts\View\View;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Prophecy\Argument;
 use PhpSpec\ObjectBehavior;
 use Orchestra\Contracts\Auth\Guard;
-use Illuminate\Contracts\View\View;
-use Illuminate\Contracts\Auth\Authenticatable;
 
 class NavbarSpec extends ObjectBehavior
 {
@@ -12,7 +15,7 @@ class NavbarSpec extends ObjectBehavior
     {
         $this->beConstructedWith($auth);
 
-        $this->shouldHaveType('App\Composers\Navbar');
+        $this->shouldHaveType(Navbar::class);
     }
 
     function it_should_bind_user_property(Guard $auth, View $view, Authenticatable $user)
