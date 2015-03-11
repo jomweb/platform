@@ -4,7 +4,7 @@
 # Config Github Settings
 github_username = "fideloper"
 github_repo     = "Vaprobash"
-github_branch   = "1.2.0"
+github_branch   = "1.3.1"
 github_url      = "https://raw.githubusercontent.com/#{github_username}/#{github_repo}/#{github_branch}"
 
 # Server Configuration
@@ -50,9 +50,9 @@ hhvm                  = "false"
 
 # PHP Options
 composer_packages     = [        # List any global Composer packages that you want to install
-  "phpunit/phpunit:4.0.*",
-  "codeception/codeception=*",
-  "phpspec/phpspec:2.0.*@dev",
+  #"phpunit/phpunit:4.0.*",
+  #"codeception/codeception=*",
+  #"phpspec/phpspec:2.0.*@dev",
   #"squizlabs/php_codesniffer:1.5.*",
 ]
 
@@ -72,6 +72,10 @@ nodejs_packages       = [          # List any global NodeJS packages that you wa
   "bower",
   #"yo",
 ]
+
+# RabbitMQ settings
+rabbitmq_user = "user"
+rabbitmq_password = "password"
 
 sphinxsearch_version  = "rel22" # rel20, rel21, rel22, beta, daily, stable
 
@@ -98,6 +102,7 @@ Vagrant.configure("2") do |config|
 
   # Create a static IP
   config.vm.network :private_network, ip: server_ip
+  config.vm.network :forwarded_port, guest: 80, host: 8000
 
   # Use NFS for the shared folder
   config.vm.synced_folder ".", "/vagrant",
@@ -108,7 +113,7 @@ Vagrant.configure("2") do |config|
   # If using VirtualBox
   config.vm.provider :virtualbox do |vb|
 
-    vb.name = "JomWeb"
+    vb.name = "JomWeb Platform"
 
     # Set server cpus
     vb.customize ["modifyvm", :id, "--cpus", server_cpus]
@@ -153,11 +158,12 @@ Vagrant.configure("2") do |config|
   # Needs to ensure that the vagrant plugin is installed
   config.vm.provider :digital_ocean do |provider, override|
     override.ssh.private_key_path = '~/.ssh/id_rsa'
+    override.ssh.username = 'vagrant'
     override.vm.box = 'digital_ocean'
     override.vm.box_url = "https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box"
 
     provider.token = 'YOUR TOKEN'
-    provider.image = 'Ubuntu 14.04 x64'
+    provider.image = 'ubuntu-14-04-x64'
     provider.region = 'nyc2'
     provider.size = '512mb'
   end
@@ -275,6 +281,9 @@ Vagrant.configure("2") do |config|
   # Install ØMQ
   # config.vm.provision "shell", path: "#{github_url}/scripts/zeromq.sh"
 
+  # Install RabbitMQ
+  # config.vm.provision "shell", path: "#{github_url}/scripts/rabbitmq.sh", args: [rabbitmq_user, rabbitmq_password]
+
   ####
   # Additional Languages
   ##########
@@ -309,6 +318,9 @@ Vagrant.configure("2") do |config|
 
   # Install Ansible
   # config.vm.provision "shell", path: "#{github_url}/scripts/ansible.sh"
+
+  # Install Android
+  # config.vm.provision "shell", path: "#{github_url}/scripts/android.sh"
 
   ####
   # Local Scripts
