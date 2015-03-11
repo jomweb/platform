@@ -156,6 +156,10 @@ return [
         'Orchestra\Foundation\Providers\FoundationServiceProvider',
 
         /*
+         * Orchestra Platform Optional Service Providers...
+         */
+
+        /*
          * Application Service Providers...
          */
         'App\Providers\AppServiceProvider',

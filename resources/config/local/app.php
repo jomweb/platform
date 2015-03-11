@@ -12,9 +12,6 @@ return [
     |
     */
     'providers' => append_config([
-        /*
-         * Orchestra Platform Optional Service Providers...
-         */
         'Orchestra\Installation\InstallerServiceProvider',
     ]),
 
