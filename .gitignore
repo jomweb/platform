@@ -2,9 +2,10 @@
 /public/packages/*
 /.env
 
-# Composer
+# Composer & PHP
 /vendor/*
 /composer.phar
+/.php_cs.cache
 
 # Node.js
 /node_modules/*
