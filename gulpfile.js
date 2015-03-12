@@ -24,7 +24,9 @@ dir = {
 };
 
 elixir(function(mix) {
-  mix.sass('app.scss', dir.asset.css);
+  mix.sass('app.scss', dir.asset.css, {
+    includePaths: [dir.vendor+'/bootstrap-sass-official/assets/stylesheets']
+  });
 
   mix.copy(dir.theme+'/assets/js/ie10-viewport-bug-workaround.js', dir.asset.js+'/ie.js')
     .copy(dir.vendor+'/jquery/dist/jquery.min.js', dir.asset.js+'/vendor/jquery.min.js')
