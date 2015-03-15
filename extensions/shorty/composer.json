@@ -16,7 +16,8 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
-		"orchestra/contracts": "3.0.*"
+		"orchestra/contracts": "3.0.*",
+		"hashids/hashids": "~1.0"
 	},
 	"require-dev": {
 		"mockery/mockery": "0.9.*"

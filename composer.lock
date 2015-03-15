@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "073fa6f59107ed9a341ba929667fd1d4",
+    "hash": "cd430b2a520903c569cb7cc47b3ed4c8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -557,6 +557,63 @@
             "time": "2014-10-12 19:18:40"
         },
         {
+            "name": "hashids/hashids",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivanakimov/hashids.php.git",
+                "reference": "991a88b01b01b053fbd39a56780a66e572f1dc1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/991a88b01b01b053fbd39a56780a66e572f1dc1a",
+                "reference": "991a88b01b01b053fbd39a56780a66e572f1dc1a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Hashids": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com",
+                    "homepage": "https://twitter.com/IvanAkimov"
+                }
+            ],
+            "description": "Generate hashids like YouTube or Bitly from numbers to obfuscate your database primary ids, or navigate to the right shard.",
+            "homepage": "http://hashids.org/php",
+            "keywords": [
+                "bitly",
+                "decrypt",
+                "encrypt",
+                "hash",
+                "hashid",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "time": "2015-01-21 00:49:41"
+        },
+        {
             "name": "imagine/imagine",
             "version": "0.6.2",
             "source": {
@@ -743,16 +800,16 @@
         },
         {
             "name": "jeremeamia/SuperClosure",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jeremeamia/super_closure.git",
-                "reference": "ac4394c7e21777ac48543190fb0872b2fc7f17af"
+                "reference": "b712f39c671e5ead60c7ebfe662545456aade833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/ac4394c7e21777ac48543190fb0872b2fc7f17af",
-                "reference": "ac4394c7e21777ac48543190fb0872b2fc7f17af",
+                "url": "https://api.github.com/repos/jeremeamia/super_closure/zipball/b712f39c671e5ead60c7ebfe662545456aade833",
+                "reference": "b712f39c671e5ead60c7ebfe662545456aade833",
                 "shasum": ""
             },
             "require": {
@@ -766,7 +823,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -797,20 +854,20 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2015-01-26 23:07:39"
+            "time": "2015-03-11 20:06:43"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.0.14",
+            "version": "v5.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f61e0098151c73db9068a6be6d86bfc60b01de25"
+                "reference": "861a1e78c84dca82fe4bd85d00349c52304eea77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f61e0098151c73db9068a6be6d86bfc60b01de25",
-                "reference": "f61e0098151c73db9068a6be6d86bfc60b01de25",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/861a1e78c84dca82fe4bd85d00349c52304eea77",
+                "reference": "861a1e78c84dca82fe4bd85d00349c52304eea77",
                 "shasum": ""
             },
             "require": {
@@ -918,24 +975,25 @@
                 }
             ],
             "description": "The Laravel Framework.",
+            "homepage": "http://laravel.com",
             "keywords": [
                 "framework",
                 "laravel"
             ],
-            "time": "2015-03-07 03:18:10"
+            "time": "2015-03-13 13:27:55"
         },
         {
             "name": "laravel/socialite",
-            "version": "v2.0.3",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "4ca0e2868fdfd3156c02c0d5c5612cbd8fa9b124"
+                "reference": "3d5f6560f8642c4973b5e54a67b1368ee81ff24d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/4ca0e2868fdfd3156c02c0d5c5612cbd8fa9b124",
-                "reference": "4ca0e2868fdfd3156c02c0d5c5612cbd8fa9b124",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/3d5f6560f8642c4973b5e54a67b1368ee81ff24d",
+                "reference": "3d5f6560f8642c4973b5e54a67b1368ee81ff24d",
                 "shasum": ""
             },
             "require": {
@@ -976,7 +1034,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2015-02-24 20:20:48"
+            "time": "2015-03-13 02:40:10"
         },
         {
             "name": "league/flysystem",
@@ -1126,16 +1184,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "c41c218e239b50446fd883acb1ecfd4b770caeae"
+                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c41c218e239b50446fd883acb1ecfd4b770caeae",
-                "reference": "c41c218e239b50446fd883acb1ecfd4b770caeae",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
+                "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
                 "shasum": ""
             },
             "require": {
@@ -1195,7 +1253,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-03-05 01:12:12"
+            "time": "2015-03-09 09:58:04"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -1243,16 +1301,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.16.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "9b7665041754eaa9bb2622349bc9adbc1cf61cb8"
+                "reference": "a1dd1ad9abfc8b3c4d8768068e6c71d293424e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/9b7665041754eaa9bb2622349bc9adbc1cf61cb8",
-                "reference": "9b7665041754eaa9bb2622349bc9adbc1cf61cb8",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a1dd1ad9abfc8b3c4d8768068e6c71d293424e86",
+                "reference": "a1dd1ad9abfc8b3c4d8768068e6c71d293424e86",
                 "shasum": ""
             },
             "require": {
@@ -1285,7 +1343,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-03-04 04:50:11"
+            "time": "2015-03-08 14:05:44"
         },
         {
             "name": "nikic/php-parser",
@@ -2688,16 +2746,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "3787f3436f4fd898e0ac1eb6f5abd2ab6b24085b"
+                "reference": "e50a63b4e4971041fda993b0dd6977fc60bc39d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/3787f3436f4fd898e0ac1eb6f5abd2ab6b24085b",
-                "reference": "3787f3436f4fd898e0ac1eb6f5abd2ab6b24085b",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e50a63b4e4971041fda993b0dd6977fc60bc39d4",
+                "reference": "e50a63b4e4971041fda993b0dd6977fc60bc39d4",
                 "shasum": ""
             },
             "require": {
@@ -2708,10 +2766,10 @@
                 "symfony/console": "~2.3.10|~2.4.2|~2.5"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "~1.3",
+                "fabpot/php-cs-fixer": "~1.5",
                 "phpunit/phpunit": "~3.7|~4.0",
                 "squizlabs/php_codesniffer": "~2.0",
-                "symfony/finder": "~2.1"
+                "symfony/finder": "~2.1|~3.0"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -2725,7 +2783,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.3.x-dev"
+                    "dev-develop": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -2755,7 +2813,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2015-02-25 20:35:54"
+            "time": "2015-03-14 17:29:14"
         },
         {
             "name": "react/promise",
@@ -2803,16 +2861,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.3.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "c5f963e7f9d6f6438fda4f22d5cc2db296ec621a"
+                "reference": "31454f258f10329ae7c48763eb898a75c39e0a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/c5f963e7f9d6f6438fda4f22d5cc2db296ec621a",
-                "reference": "c5f963e7f9d6f6438fda4f22d5cc2db296ec621a",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/31454f258f10329ae7c48763eb898a75c39e0a9f",
+                "reference": "31454f258f10329ae7c48763eb898a75c39e0a9f",
                 "shasum": ""
             },
             "require": {
@@ -2824,7 +2882,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.3-dev"
+                    "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
@@ -2851,7 +2909,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-12-05 14:17:14"
+            "time": "2015-03-14 06:06:39"
         },
         {
             "name": "symfony/console",
@@ -3654,16 +3712,16 @@
         },
         {
             "name": "fabpot/php-cs-fixer",
-            "version": "v1.5",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "2d6851520bf0250f668307ab2fd28cbb0b35d2b9"
+                "reference": "85777ebc6a1dac48c904acf9412b29b58b5dd592"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2d6851520bf0250f668307ab2fd28cbb0b35d2b9",
-                "reference": "2d6851520bf0250f668307ab2fd28cbb0b35d2b9",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/85777ebc6a1dac48c904acf9412b29b58b5dd592",
+                "reference": "85777ebc6a1dac48c904acf9412b29b58b5dd592",
                 "shasum": ""
             },
             "require": {
@@ -3703,7 +3761,7 @@
                 }
             ],
             "description": "A script to automatically fix Symfony Coding Standard",
-            "time": "2015-02-18 19:35:59"
+            "time": "2015-03-13 19:33:24"
         },
         {
             "name": "orchestra/studio",
@@ -3754,16 +3812,16 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "8d0927a7f9b522d2af1e3d228f2f002eb2c122f2"
+                "reference": "767dc59afeaf8e0c2428688b7f9da20dd5dc3689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/8d0927a7f9b522d2af1e3d228f2f002eb2c122f2",
-                "reference": "8d0927a7f9b522d2af1e3d228f2f002eb2c122f2",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/767dc59afeaf8e0c2428688b7f9da20dd5dc3689",
+                "reference": "767dc59afeaf8e0c2428688b7f9da20dd5dc3689",
                 "shasum": ""
             },
             "require": {
@@ -3812,26 +3870,32 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2015-02-26 16:29:51"
+            "time": "2015-03-12 23:13:48"
         },
         {
             "name": "orchestra/testing",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testing.git",
-                "reference": "0f87133228b0609e136b91982f123d73a21466f7"
+                "reference": "dc6bf2ed59f55ef8f14d7d32c69bf5c675744058"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testing/zipball/0f87133228b0609e136b91982f123d73a21466f7",
-                "reference": "0f87133228b0609e136b91982f123d73a21466f7",
+                "url": "https://api.github.com/repos/orchestral/testing/zipball/dc6bf2ed59f55ef8f14d7d32c69bf5c675744058",
+                "reference": "dc6bf2ed59f55ef8f14d7d32c69bf5c675744058",
                 "shasum": ""
             },
             "require": {
-                "orchestra/foundation": "3.0.*",
+                "orchestra/contracts": "3.0.*",
                 "orchestra/testbench": "3.0.*",
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/foundation": "3.0.*"
+            },
+            "suggest": {
+                "orchestra/foundation": "Allow testing extension for Orchestra Platform (~3.0)"
             },
             "type": "library",
             "extra": {
@@ -3856,7 +3920,7 @@
                 }
             ],
             "description": "Orchestra Platform Testing Helper",
-            "time": "2015-03-02 11:38:54"
+            "time": "2015-03-13 11:50:55"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
