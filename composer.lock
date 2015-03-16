@@ -3773,12 +3773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/studio.git",
-                "reference": "1b36b9c4ce451f7459cc0054f4604d6bfd8600f5"
+                "reference": "cff3333cc45d8f57bb6432daa345cc6c44c06c00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/studio/zipball/1b36b9c4ce451f7459cc0054f4604d6bfd8600f5",
-                "reference": "1b36b9c4ce451f7459cc0054f4604d6bfd8600f5",
+                "url": "https://api.github.com/repos/orchestral/studio/zipball/cff3333cc45d8f57bb6432daa345cc6c44c06c00",
+                "reference": "cff3333cc45d8f57bb6432daa345cc6c44c06c00",
                 "shasum": ""
             },
             "require": {
@@ -3812,7 +3812,7 @@
                 }
             ],
             "description": "Code Generator for Orchestra Platform",
-            "time": "2015-03-09 12:01:56"
+            "time": "2015-03-16 16:26:51"
         },
         {
             "name": "orchestra/testbench",
