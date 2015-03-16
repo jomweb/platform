@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b8c20f8d15dd26862453d2525c58226",
+    "hash": "2c54e8eb8f52bcda0332f86db0f81a29",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1951,16 +1951,16 @@
         },
         {
             "name": "orchestra/kernel",
-            "version": "v3.0.3",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/kernel.git",
-                "reference": "caa5343895458742efd54fc7667df1177f37b70d"
+                "reference": "8678ac678c2a07c5060faf59b4901f1d01da5ed3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/kernel/zipball/caa5343895458742efd54fc7667df1177f37b70d",
-                "reference": "caa5343895458742efd54fc7667df1177f37b70d",
+                "url": "https://api.github.com/repos/orchestral/kernel/zipball/8678ac678c2a07c5060faf59b4901f1d01da5ed3",
+                "reference": "8678ac678c2a07c5060faf59b4901f1d01da5ed3",
                 "shasum": ""
             },
             "require": {
@@ -1975,8 +1975,12 @@
                 "orchestra/routing": "self.version"
             },
             "require-dev": {
+                "hashids/hashids": "~1.0",
                 "laravel/framework": "5.0.*",
                 "mockery/mockery": "0.9.*"
+            },
+            "suggest": {
+                "hashids/hashids": "Allow to use HashId as a URL id replacement (~1.0)"
             },
             "type": "library",
             "extra": {
@@ -2004,7 +2008,7 @@
                 }
             ],
             "description": "Kernel for Orchestra Platform",
-            "time": "2015-03-01 07:59:46"
+            "time": "2015-03-16 04:45:29"
         },
         {
             "name": "orchestra/memory",
@@ -4980,6 +4984,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "orchestra/kernel": 20,
         "orchestra/oneauth": 20,
         "orchestra/studio": 20
     },
