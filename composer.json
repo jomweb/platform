@@ -2,7 +2,7 @@
 	"name": "jomweb/platform",
 	"description": "JomWeb Platform",
 	"homepage": "http://jomweb.my/",
-	"license": "MIT",
+	"license": "BSD-3-Clause",
 	"type": "project",
 	"require": {
 		"php": ">=5.5.0",
