@@ -25,13 +25,13 @@ dir = {
 
 elixir(function(mix) {
   mix.sass('app.scss', dir.asset.css, {
-    includePaths: [dir.vendor+'/bootstrap-sass-official/assets/stylesheets']
+    includePaths: [dir.vendor+'/']
   });
 
   mix.copy(dir.theme+'/assets/js/ie10-viewport-bug-workaround.js', dir.asset.js+'/ie.js')
     .copy(dir.vendor+'/jquery/dist/jquery.min.js', dir.asset.js+'/vendor/jquery.min.js')
     .copy(dir.vendor+'/jquery/dist/jquery.min.map', dir.asset.js+'/vendor/jquery.min.map')
-    .copy(dir.vendor+'/bootstrap-sass-official/assets/javascripts/bootstrap.min.js', dir.asset.js+'/vendor/bootstrap.min.js')
+    .copy(dir.vendor+'/bootstrap-sass/assets/javascripts/bootstrap.min.js', dir.asset.js+'/vendor/bootstrap.min.js')
     .copy(dir.vendor+'/font-awesome/fonts', dir.asset.font)
     .copy(dir.theme+'/assets/fonts', dir.asset.font)
     .copy(dir.theme+'/assets/img/header.jpg', dir.asset.img+'/header.jpg');

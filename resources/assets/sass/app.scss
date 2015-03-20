@@ -1,11 +1,7 @@
 @import "variables";
-@import "bootstrap";
-
-$fa-font-path: "/resources/fonts" !default;
-@import "../../../vendor/bower_components/font-awesome/scss/font-awesome";
-
-$ionicons-font-path: "/resources/fonts" !default;
-@import "../../../vendor/bower_components/ionicons/scss/ionicons";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "font-awesome/scss/font-awesome";
+@import "ionicons/scss/ionicons";
 
 /*!
  * Application
