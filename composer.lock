@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "af949c0fd1462b08a52af4d9be989b4c",
+    "hash": "fd373977d17e63d45b7716bc6278ccdc",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1954,16 +1954,16 @@
         },
         {
             "name": "orchestra/kernel",
-            "version": "3.0.x-dev",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/kernel.git",
-                "reference": "8678ac678c2a07c5060faf59b4901f1d01da5ed3"
+                "reference": "76225c8cf237bc50472cbd3b7f1cb858840d1295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/kernel/zipball/8678ac678c2a07c5060faf59b4901f1d01da5ed3",
-                "reference": "8678ac678c2a07c5060faf59b4901f1d01da5ed3",
+                "url": "https://api.github.com/repos/orchestral/kernel/zipball/76225c8cf237bc50472cbd3b7f1cb858840d1295",
+                "reference": "76225c8cf237bc50472cbd3b7f1cb858840d1295",
                 "shasum": ""
             },
             "require": {
@@ -1983,7 +1983,7 @@
                 "mockery/mockery": "0.9.*"
             },
             "suggest": {
-                "hashids/hashids": "Allow to use HashId as a URL id replacement (~1.0)"
+                "hashids/hashids": "Allow to use HashId as a URL id replacement (~1.0)."
             },
             "type": "library",
             "extra": {
@@ -2011,7 +2011,7 @@
                 }
             ],
             "description": "Kernel for Orchestra Platform",
-            "time": "2015-03-16 04:45:29"
+            "time": "2015-03-20 12:41:15"
         },
         {
             "name": "orchestra/memory",
@@ -5063,7 +5063,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "orchestra/kernel": 20,
         "orchestra/oneauth": 20,
         "orchestra/studio": 20
     },
