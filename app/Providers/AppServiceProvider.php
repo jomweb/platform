@@ -13,9 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->addBackToWebsiteMenu();
-
-        $this->addViewComposers();
+        //
     }
 
     /**
@@ -30,25 +28,5 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-    }
-
-    /**
-     * Add back to website menu.
-     *
-     * @return void
-     */
-    protected function addBackToWebsiteMenu()
-    {
-        $this->app['events']->listen('orchestra.ready: admin', BackToWebsite::class);
-    }
-
-    /**
-     * Add view composers.
-     *
-     * @return void
-     */
-    protected function addViewComposers()
-    {
-        $this->app['view']->composer('layouts.partials.navigation', Navbar::class);
     }
 }

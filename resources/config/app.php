@@ -163,8 +163,7 @@ return [
          * Application Service Providers...
          */
         'App\Providers\AppServiceProvider',
-        'App\Providers\ConfigServiceProvider',
-        'App\Providers\BusServiceProvider',
+        'App\Providers\ComposerServiceProvider',
         'App\Providers\EventServiceProvider',
         'App\Providers\ExtensionServiceProvider',
         'App\Providers\RouteServiceProvider',

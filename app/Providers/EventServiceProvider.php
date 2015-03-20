@@ -1,5 +1,6 @@
 <?php namespace App\Providers;
 
+use App\Http\Handlers\BackToWebsite;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -11,9 +12,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'event.name' => [
-            'EventListener',
-        ],
+        'orchestra.ready: admin' => [BackToWebsite::class],
     ];
 
     /**
