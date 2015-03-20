@@ -307,16 +307,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.9.2",
+            "version": "v3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155"
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0645b70d953bc1c067bbc8d5bc53194706b628d9",
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9",
                 "shasum": ""
             },
             "require": {
@@ -357,6 +357,9 @@
                 "zendframework/zend-cache": "2.*,<2.3",
                 "zendframework/zend-log": "2.*,<2.3"
             },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -384,7 +387,7 @@
                     "homepage": "https://github.com/guzzle/guzzle/contributors"
                 }
             ],
-            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
             "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
@@ -395,7 +398,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-11 04:32:36"
+            "time": "2015-03-18 18:23:50"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1582,25 +1585,25 @@
         },
         {
             "name": "orchestra/control",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/control.git",
-                "reference": "8d432c6d468e4180725119684d6c0fc0d63900db"
+                "reference": "0b6e83fff895b3f4030b68929ccdaf6f3ee2a1ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/control/zipball/8d432c6d468e4180725119684d6c0fc0d63900db",
-                "reference": "8d432c6d468e4180725119684d6c0fc0d63900db",
+                "url": "https://api.github.com/repos/orchestral/control/zipball/0b6e83fff895b3f4030b68929ccdaf6f3ee2a1ab",
+                "reference": "0b6e83fff895b3f4030b68929ccdaf6f3ee2a1ab",
                 "shasum": ""
             },
             "require": {
+                "orchestra/contracts": "3.0.*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "mockery/mockery": "0.9.*",
                 "orchestra/foundation": "3.0.*",
-                "orchestra/testing": "3.0.*"
+                "phpspec/phpspec": "~2.1"
             },
             "type": "library",
             "extra": {
@@ -1637,7 +1640,7 @@
                 "theme",
                 "timezone"
             ],
-            "time": "2015-03-10 02:38:10"
+            "time": "2015-03-20 12:15:47"
         },
         {
             "name": "orchestra/extension",
