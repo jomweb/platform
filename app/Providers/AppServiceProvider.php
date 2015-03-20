@@ -1,7 +1,5 @@
 <?php namespace App\Providers;
 
-use App\Composers\Navbar;
-use App\Http\Handlers\BackToWebsite;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
