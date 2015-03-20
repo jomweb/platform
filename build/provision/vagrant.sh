@@ -4,12 +4,12 @@
 
 cd /vagrant/
 
-if [ -f ./storage/framework/compiled.php ]; then
-    rm storage/framework/compiled.php
+if [ -f ./vendor/compiled.php ]; then
+    rm vendor/compiled.php
 fi
 
 if [ ! -f .env ]; then
     cp ./build/provision/.env.vagrant .env
 fi
 
-composer install --prefer-dist --dev
+composer install --prefer-dist --profile -vvv
