@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f11b38aeb484af145432915a92634205",
+    "hash": "e307a48f76ac1cf70ce69a90082af489",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -4000,6 +4000,51 @@
             "time": "2015-03-13 11:50:55"
         },
         {
+            "name": "orchestra/theme-installer",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/theme-installer.git",
+                "reference": "975e010304bc18078039732c57cb8633bbd50c3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/theme-installer/zipball/975e010304bc18078039732c57cb8633bbd50c3c",
+                "reference": "975e010304bc18078039732c57cb8633bbd50c3c",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.*",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "class": "Orchestra\\ThemeInstaller\\InstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\ThemeInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Theme Installer for Orchestra Platform",
+            "time": "2015-01-20 07:47:03"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.4",
             "source": {
@@ -4960,6 +5005,46 @@
             "time": "2014-12-15 14:25:24"
         },
         {
+            "name": "stackie/adminlte-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stackie/adminlte-theme.git",
+                "reference": "134e7e5625e40c5434853e71c30559798899ffa3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stackie/adminlte-theme/zipball/134e7e5625e40c5434853e71c30559798899ffa3",
+                "reference": "134e7e5625e40c5434853e71c30559798899ffa3",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/avatar": "~3.0",
+                "orchestra/theme-installer": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "orchestra-theme",
+            "extra": {
+                "theme-name": "adminlte",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "AdminLTE Theme for Orchestra Platform",
+            "time": "2015-03-21 03:34:11"
+        },
+        {
             "name": "symfony/stopwatch",
             "version": "v2.6.5",
             "target-dir": "Symfony/Component/Stopwatch",
@@ -5064,7 +5149,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "orchestra/oneauth": 20,
-        "orchestra/studio": 20
+        "orchestra/studio": 20,
+        "stackie/adminlte-theme": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -22,7 +22,8 @@
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1",
 		"fabpot/php-cs-fixer": "~1.5",
-		"orchestra/studio": "3.0.*@dev"
+		"orchestra/studio": "3.0.*@dev",
+		"stackie/adminlte-theme": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
