@@ -27,7 +27,7 @@ JomWeb Platform
 To update composer, just run the following command:
 
 ```bash
-$ vagrant ssh -c ‘cd /vagrant && composer install —prefer-dist
+$ vagrant ssh -c “cd /vagrant && composer install —prefer-dist”
 ```
 
 
