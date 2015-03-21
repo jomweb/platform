@@ -23,20 +23,20 @@ class BackToWebsiteSpec extends ObjectBehavior
 
     function it_can_be_display_when_is_installed(Container $app, Foundation $foundation, Menu $menu)
     {
-        $app->offsetGet('orchestra.app')->willReturn($foundation);
-        $app->make('orchestra.platform.menu')->willReturn($menu);
+        $app->offsetGet('orchestra.app')->shouldBeCalled(1)->willReturn($foundation);
+        $app->make('orchestra.platform.menu')->shouldBeCalled(1)->willReturn($menu);
 
-        $foundation->installed()->willReturn(true);
+        $foundation->installed()->shouldBeCalled(1)->willReturn(true);
 
         $this->authorize()->shouldReturn(true);
     }
 
     function it_cant_be_display_when_is_not_installed(Container $app, Foundation $foundation, Menu $menu)
     {
-        $app->offsetGet('orchestra.app')->willReturn($foundation);
-        $app->make('orchestra.platform.menu')->willReturn($menu);
+        $app->offsetGet('orchestra.app')->shouldBeCalled(1)->willReturn($foundation);
+        $app->make('orchestra.platform.menu')->shouldBeCalled(1)->willReturn($menu);
 
-        $foundation->installed()->willReturn(false);
+        $foundation->installed()->shouldBeCalled(1)->willReturn(false);
 
         $this->authorize()->shouldReturn(false);
     }
