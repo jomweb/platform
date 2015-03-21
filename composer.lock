@@ -5010,12 +5010,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/stackie/adminlte-theme.git",
-                "reference": "134e7e5625e40c5434853e71c30559798899ffa3"
+                "reference": "389ec08b5b55e52703a48c953c0077622efc0cf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stackie/adminlte-theme/zipball/134e7e5625e40c5434853e71c30559798899ffa3",
-                "reference": "134e7e5625e40c5434853e71c30559798899ffa3",
+                "url": "https://api.github.com/repos/stackie/adminlte-theme/zipball/389ec08b5b55e52703a48c953c0077622efc0cf4",
+                "reference": "389ec08b5b55e52703a48c953c0077622efc0cf4",
                 "shasum": ""
             },
             "require": {
@@ -5042,7 +5042,7 @@
                 }
             ],
             "description": "AdminLTE Theme for Orchestra Platform",
-            "time": "2015-03-21 03:34:11"
+            "time": "2015-03-21 04:05:08"
         },
         {
             "name": "symfony/stopwatch",
