@@ -30,4 +30,12 @@ To update composer, just run the following command:
 $ vagrant ssh -c "cd /vagrant && composer install —prefer-dist"
 ```
 
+### Running migration
+
+To run project database schema migration, just run the following commnad:
+
+```bash
+$ vagrant ssh -c "php /vagrant/artisan migrate"
+```
+
 
