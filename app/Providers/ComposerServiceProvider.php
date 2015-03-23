@@ -1,5 +1,6 @@
 <?php namespace App\Providers;
 
+use App\Composers\Navbar;
 use Illuminate\Support\ServiceProvider;
 
 class ComposerServiceProvider extends ServiceProvider
