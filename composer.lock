@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7979ec1c7344193a3cc18a2515226fea",
+    "hash": "40bef90f9a41e7b6b8ad9b56f46543da",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -460,16 +460,16 @@
         },
         {
             "name": "guzzlehttp/ringphp",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/RingPHP.git",
-                "reference": "f43ab34aad69ca0ba04172cf2c3cd5c12fc0e5a4"
+                "reference": "52d868f13570a9a56e5fce6614e0ec75d0f13ac2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/f43ab34aad69ca0ba04172cf2c3cd5c12fc0e5a4",
-                "reference": "f43ab34aad69ca0ba04172cf2c3cd5c12fc0e5a4",
+                "url": "https://api.github.com/repos/guzzle/RingPHP/zipball/52d868f13570a9a56e5fce6614e0ec75d0f13ac2",
+                "reference": "52d868f13570a9a56e5fce6614e0ec75d0f13ac2",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +507,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
-            "time": "2015-02-26 20:43:09"
+            "time": "2015-03-30 01:43:20"
         },
         {
             "name": "guzzlehttp/streams",
@@ -1706,16 +1706,16 @@
         },
         {
             "name": "orchestra/foundation",
-            "version": "v3.0.7",
+            "version": "v3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/foundation.git",
-                "reference": "82151e4e8a51c61ff26c5a55a64a8c25eb234f13"
+                "reference": "f26cbb93f9f4a75e2573d729c06279466d2b9302"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/foundation/zipball/82151e4e8a51c61ff26c5a55a64a8c25eb234f13",
-                "reference": "82151e4e8a51c61ff26c5a55a64a8c25eb234f13",
+                "url": "https://api.github.com/repos/orchestral/foundation/zipball/f26cbb93f9f4a75e2573d729c06279466d2b9302",
+                "reference": "f26cbb93f9f4a75e2573d729c06279466d2b9302",
                 "shasum": ""
             },
             "require": {
@@ -1778,7 +1778,7 @@
                 "orchestral",
                 "user-management"
             ],
-            "time": "2015-03-22 06:14:35"
+            "time": "2015-03-31 14:40:30"
         },
         {
             "name": "orchestra/html",
@@ -2016,16 +2016,16 @@
         },
         {
             "name": "orchestra/memory",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/memory.git",
-                "reference": "1f293f48ba27159deed3bcd23e1adfd3751d5fa0"
+                "reference": "ffa0709e26bb0048fcfe9a1669aa8468dde27dc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/memory/zipball/1f293f48ba27159deed3bcd23e1adfd3751d5fa0",
-                "reference": "1f293f48ba27159deed3bcd23e1adfd3751d5fa0",
+                "url": "https://api.github.com/repos/orchestral/memory/zipball/ffa0709e26bb0048fcfe9a1669aa8468dde27dc6",
+                "reference": "ffa0709e26bb0048fcfe9a1669aa8468dde27dc6",
                 "shasum": ""
             },
             "require": {
@@ -2075,7 +2075,7 @@
                 "orchestra-platform",
                 "orchestral"
             ],
-            "time": "2015-03-18 10:30:24"
+            "time": "2015-03-31 14:37:05"
         },
         {
             "name": "orchestra/messages",
@@ -5148,13 +5148,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
-        "orchestra/oneauth": 20,
-        "orchestra/studio": 20,
         "stackie/adminlte-theme": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.5.0"

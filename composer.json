@@ -6,12 +6,12 @@
 	"type": "project",
 	"require": {
 		"php": ">=5.5.0",
-		"orchestra/foundation": "~3.0.7",
+		"orchestra/foundation": "~3.0.9",
 		"orchestra/avatar": "~3.0",
 		"orchestra/imagine": "~3.0",
 		"orchestra/installer": "~3.0",
 		"orchestra/control": "~3.0",
-		"orchestra/oneauth": "3.0.*@dev",
+		"orchestra/oneauth": "~3.0",
 		"erusev/parsedown-extra": "~0.2",
 		"hashids/hashids": "~1.0",
 		"pda/pheanstalk": "~3.0",
@@ -22,7 +22,7 @@
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1",
 		"fabpot/php-cs-fixer": "~1.5",
-		"orchestra/studio": "3.0.*@dev",
+		"orchestra/studio": "~3.0",
 		"stackie/adminlte-theme": "dev-master"
 	},
 	"autoload": {
@@ -56,5 +56,7 @@
 	},
 	"config": {
 		"preferred-install": "dist"
-	}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
