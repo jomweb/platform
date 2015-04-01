@@ -1,6 +1,8 @@
 JomWeb Platform
 ==============
 
+[![Join the chat at https://gitter.im/jomweb/platform](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jomweb/platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://img.shields.io/travis/jomweb/platform/develop.svg?style=flat)](https://travis-ci.org/jomweb/platform)
 [![Scrutinizer Quality Score](https://img.shields.io/scrutinizer/g/jomweb/platform/develop.svg?style=flat)](https://scrutinizer-ci.com/g/jomweb/platform/)
 
