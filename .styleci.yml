@@ -50,3 +50,4 @@ excluded:
     - resources
     - spec
     - tests
+    - server.php
