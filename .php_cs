@@ -54,6 +54,5 @@ return Symfony\CS\Config\Config::create()
         'trim_array_spaces',
         'unused_use',
         'whitespacy_lines',
-        'visibility',
     ])
     ->finder($finder);

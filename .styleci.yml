@@ -41,7 +41,6 @@ enabled:
     - trim_array_spaces
     - unused_use
     - whitespacy_lines
-    - visibility
 
 disabled:
     - psr0
