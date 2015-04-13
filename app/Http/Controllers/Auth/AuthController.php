@@ -136,7 +136,7 @@ class AuthController extends Controller implements AuthenticateUserListener, Pro
      */
     public function profileCreatedWithoutNotification()
     {
-        messages('success', trans("orchestra/foundation::response.users.create"));
+        messages('success', trans('orchestra/foundation::response.users.create'));
         messages('error', trans('orchestra/foundation::response.credential.register.email-fail'));
 
         return redirect(handles('app::auth/login'));
@@ -149,7 +149,7 @@ class AuthController extends Controller implements AuthenticateUserListener, Pro
      */
     public function profileCreated()
     {
-        messages('success', trans("orchestra/foundation::response.users.create"));
+        messages('success', trans('orchestra/foundation::response.users.create'));
         messages('success', trans('orchestra/foundation::response.credential.register.email-send'));
 
         return redirect(handles('app::auth/login'));

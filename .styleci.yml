@@ -48,6 +48,7 @@ disabled:
 
 excluded:
     - extensions
+    - public
     - resources
     - spec
     - tests
