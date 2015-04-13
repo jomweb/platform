@@ -19,7 +19,6 @@ enabled:
     - operators_spaces
     - ordered_use
     - phpdoc_indent
-    - phpdoc_no_access
     - phpdoc_no_empty_return
     - phpdoc_no_package
     - phpdoc_params
