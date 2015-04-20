@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"php": ">=5.5.0",
-		"orchestra/foundation": "~3.0.9",
+		"orchestra/foundation": "^3.0.11",
 		"orchestra/avatar": "~3.0",
 		"orchestra/imagine": "~3.0",
 		"orchestra/installer": "~3.0",
@@ -23,7 +23,7 @@
 		"phpspec/phpspec": "~2.1",
 		"fabpot/php-cs-fixer": "~1.5",
 		"orchestra/studio": "~3.0",
-		"stackie/adminlte-theme": "dev-master"
+		"stackie/adminlte-theme": "^0.1"
 	},
 	"autoload": {
 		"classmap": [
