@@ -9,5 +9,7 @@ class ExtensionServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $extensions = [];
+    protected $extensions = [
+        'base::workbench/*/*',
+    ];
 }

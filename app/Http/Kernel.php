@@ -1,16 +1,6 @@
 <?php namespace App\Http;
 
-use App\Http\Middleware\Authenticate;
-use App\Http\Middleware\RedirectIfAuthenticated;
-use App\Http\Middleware\VerifyCsrfToken;
-use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
-use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
-use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode;
-use Illuminate\Session\Middleware\StartSession;
-use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Orchestra\Foundation\Http\Kernel as HttpKernel;
-use Orchestra\Foundation\Http\Middleware\UseBackendTheme;
 
 class Kernel extends HttpKernel
 {
@@ -20,12 +10,12 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
-        CheckForMaintenanceMode::class,
-        EncryptCookies::class,
-        AddQueuedCookiesToResponse::class,
-        StartSession::class,
-        ShareErrorsFromSession::class,
-        VerifyCsrfToken::class,
+        \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+        Middleware\EncryptCookies::class,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -34,9 +24,11 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth'       => Authenticate::class,
-        'auth.basic' => AuthenticateWithBasicAuth::class,
-        'backend'    => UseBackendTheme::class,
-        'guest'      => RedirectIfAuthenticated::class,
+        'auth' => Middleware\Authenticate::class,
+        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'backend' => \Orchestra\Foundation\Http\Middleware\UseBackendTheme::class,
+        'can' => \Orchestra\Foundation\Http\Middleware\Can::class,
+        'guest' => Middleware\RedirectIfAuthenticated::class,
+        'manage' => \Orchestra\Foundation\Http\Middleware\CanManage::class,
     ];
 }

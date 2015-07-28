@@ -32,7 +32,9 @@ class WelcomeController extends Controller
      */
     public function index(Foundation $foundation)
     {
-        return view(! $foundation->installed() ? 'hello' : 'welcome');
+        $view = ! $foundation->installed() ? 'hello' : 'welcome';
+
+        return view($view);
     }
 
     /**

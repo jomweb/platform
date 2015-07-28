@@ -12,8 +12,8 @@ return [
     |
     */
     'providers' => append_config([
-        'Orchestra\Studio\StudioServiceProvider',
-        'Orchestra\Installation\InstallerServiceProvider',
+        Orchestra\Studio\StudioServiceProvider::class,
+        Orchestra\Installation\InstallerServiceProvider::class,
     ]),
 
 ];

@@ -12,3 +12,5 @@
 
 # Vagrant
 /.vagrant/*
+/Homestead.yaml
+/Homestead.json

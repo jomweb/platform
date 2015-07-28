@@ -14,13 +14,22 @@ return [
     */
 
     'files' => [
+        //
+    ],
 
-        realpath(app_path('Providers/AppServiceProvider.php')),
-        realpath(app_path('Providers/ComposerServiceProvider.php')),
-        realpath(app_path('Providers/EventServiceProvider.php')),
-        realpath(app_path('Providers/ExtensionServiceProvider.php')),
-        realpath(app_path('Providers/RouteServiceProvider.php')),
+    /*
+    |--------------------------------------------------------------------------
+    | Compiled Config Files
+    |--------------------------------------------------------------------------
+    |
+    | Here you may list config namespace/file which define a "compiles" function
+    | that returns additional files that should be compiled, providing an
+    | easy way to get common files from any packages you are utilizing.
+    |
+    */
 
+    'config' => [
+        //
     ],
 
     /*
